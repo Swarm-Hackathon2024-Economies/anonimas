@@ -14,6 +14,7 @@
 		CE7B6C0F2C355E4F0048A792 /* anonimasAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7B6C0E2C355E4F0048A792 /* anonimasAppTests.swift */; };
 		CE7B6C192C355E4F0048A792 /* anonimasAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7B6C182C355E4F0048A792 /* anonimasAppUITests.swift */; };
 		CE7B6C1B2C355E4F0048A792 /* anonimasAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7B6C1A2C355E4F0048A792 /* anonimasAppUITestsLaunchTests.swift */; };
+		CE7B6C282C355F2E0048A792 /* EventCheckInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7B6C272C355F2E0048A792 /* EventCheckInView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		CE7B6C142C355E4F0048A792 /* anonimasAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = anonimasAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7B6C182C355E4F0048A792 /* anonimasAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = anonimasAppUITests.swift; sourceTree = "<group>"; };
 		CE7B6C1A2C355E4F0048A792 /* anonimasAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = anonimasAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CE7B6C272C355F2E0048A792 /* EventCheckInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCheckInView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				CE7B6BFD2C355E4D0048A792 /* anonimasAppApp.swift */,
 				CE7B6BFF2C355E4D0048A792 /* ContentView.swift */,
+				CE7B6C272C355F2E0048A792 /* EventCheckInView.swift */,
 				CE7B6C012C355E4E0048A792 /* Assets.xcassets */,
 				CE7B6C032C355E4E0048A792 /* Preview Content */,
 			);
@@ -259,6 +262,7 @@
 			files = (
 				CE7B6C002C355E4D0048A792 /* ContentView.swift in Sources */,
 				CE7B6BFE2C355E4D0048A792 /* anonimasAppApp.swift in Sources */,
+				CE7B6C282C355F2E0048A792 /* EventCheckInView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
