@@ -6,9 +6,7 @@ struct ContentView: View {
     @State private var isCheckedIn: Bool = false
     
     var body: some View {
-        VStack(spacing: 20) {
-            Text("Pull Your Flagggggg!!!!!!!!!")
-                .font(.largeTitle)
+        VStack{
             EventCheckInView()
         }
     }

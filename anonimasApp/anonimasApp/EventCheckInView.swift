@@ -6,21 +6,24 @@ struct EventCheckInView: View {
     @State private var isCheckedIn: Bool = false
     @State private var dragOffset: CGSize = .zero
     @State private var isDragging: Bool = false
-    
+    @State private var imageHeight: CGFloat = 0
     var body: some View {
-        VStack(spacing: 20) {
-            Text("This is your flagggg!!!!! Fu*k You !!!!!!!!!")
-                .font(.largeTitle)
+        VStack{
+            Image("MemberCard")
+                .resizable()
+                .scaledToFit()
+                .background(HeightPreferenceSetter())
+                .onPreferenceChange(HeightPreferenceKey.self) { height in
+                    self.imageHeight = height
+                                }
+//                .offset(y: (UIScreen.main.bounds.height / 1)
+//                        - (imageHeight / 2)
+//                ) UIScreen.main.bounds.height
             
-            ZStack(alignment: .top) {  // .bottom から .top に変更
-                RoundedRectangle(cornerRadius: 20)
-                    .fill(Color.blue)
-                    .frame(height: 100)
-                
-                Image(systemName: "flag")
+                Image("PullButton")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width: 50, height: 50)
+                    .frame(width: 200, height: 200)
                     .foregroundColor(.white)
                     .offset(y: 30 + max(dragOffset.height, 0))  // オフセットを反転
                     .gesture(
@@ -40,11 +43,9 @@ struct EventCheckInView: View {
                             }
                     )
                 
-                Text("下にスワイプしてFu*k YOU!!!!!!!!!")  // テキストを変更
-                    .foregroundColor(.white)
-                    .padding(.top, 10)  // .bottom から .top に変更
-            }
-            .frame(height: 100)
+            Image("DownArrow")  // テキストを変更
+                .foregroundColor(.white)
+                .padding(.top, 10)  // .bottom から .top に変更
             
             if isCheckedIn {
                 Text("Fu*kYou!!!!!!!As****Hol******！")
@@ -64,5 +65,22 @@ struct EventCheckInView: View {
 struct EventCheckInView_Previews: PreviewProvider {
     static var previews: some View {
         EventCheckInView()
+    }
+}
+
+struct HeightPreferenceKey: PreferenceKey {
+    static var defaultValue: CGFloat = 0
+    
+    static func reduce(value: inout CGFloat, nextValue: () -> CGFloat) {
+        value = nextValue()
+    }
+}
+
+struct HeightPreferenceSetter: View {
+    var body: some View {
+        GeometryReader { geometry in
+            Color.clear
+                .preference(key: HeightPreferenceKey.self, value: geometry.size.height)
+        }
     }
 }
