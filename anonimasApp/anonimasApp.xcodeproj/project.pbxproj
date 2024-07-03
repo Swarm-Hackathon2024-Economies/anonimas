@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A11BB2362C35917200D75D67 /* MemberCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11BB2352C35917200D75D67 /* MemberCardView.swift */; };
+		A11BB2382C35B06700D75D67 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11BB2372C35B06700D75D67 /* HomeView.swift */; };
 		CE7B6BFE2C355E4D0048A792 /* anonimasAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7B6BFD2C355E4D0048A792 /* anonimasAppApp.swift */; };
 		CE7B6C002C355E4D0048A792 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7B6BFF2C355E4D0048A792 /* ContentView.swift */; };
 		CE7B6C022C355E4E0048A792 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE7B6C012C355E4E0048A792 /* Assets.xcassets */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A11BB2352C35917200D75D67 /* MemberCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberCardView.swift; sourceTree = "<group>"; };
+		A11BB2372C35B06700D75D67 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		CE7B6BFA2C355E4D0048A792 /* anonimasApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = anonimasApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7B6BFD2C355E4D0048A792 /* anonimasAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = anonimasAppApp.swift; sourceTree = "<group>"; };
 		CE7B6BFF2C355E4D0048A792 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -98,7 +102,9 @@
 			children = (
 				CE7B6BFD2C355E4D0048A792 /* anonimasAppApp.swift */,
 				CE7B6BFF2C355E4D0048A792 /* ContentView.swift */,
+				A11BB2372C35B06700D75D67 /* HomeView.swift */,
 				CE7B6C272C355F2E0048A792 /* EventCheckInView.swift */,
+				A11BB2352C35917200D75D67 /* MemberCardView.swift */,
 				CE7B6C012C355E4E0048A792 /* Assets.xcassets */,
 				CE7B6C032C355E4E0048A792 /* Preview Content */,
 			);
@@ -260,8 +266,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A11BB2362C35917200D75D67 /* MemberCardView.swift in Sources */,
 				CE7B6C002C355E4D0048A792 /* ContentView.swift in Sources */,
 				CE7B6BFE2C355E4D0048A792 /* anonimasAppApp.swift in Sources */,
+				A11BB2382C35B06700D75D67 /* HomeView.swift in Sources */,
 				CE7B6C282C355F2E0048A792 /* EventCheckInView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
