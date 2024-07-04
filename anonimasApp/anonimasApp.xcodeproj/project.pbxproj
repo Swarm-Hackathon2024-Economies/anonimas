@@ -18,7 +18,6 @@
 		CE7B6C1B2C355E4F0048A792 /* anonimasAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7B6C1A2C355E4F0048A792 /* anonimasAppUITestsLaunchTests.swift */; };
 		CE7B6C282C355F2E0048A792 /* EventCheckInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7B6C272C355F2E0048A792 /* EventCheckInView.swift */; };
 		CEF73FD12C36A25C005A4EAF /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF73FD02C36A25C005A4EAF /* MapView.swift */; };
-		CEF73FD32C36AB16005A4EAF /* LocationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF73FD22C36AB16005A4EAF /* LocationButton.swift */; };
 		CEF73FD52C36AF3C005A4EAF /* NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF73FD42C36AF3C005A4EAF /* NavigationView.swift */; };
 		CEF73FD72C36AF8E005A4EAF /* ArenaContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF73FD62C36AF8E005A4EAF /* ArenaContentView.swift */; };
 /* End PBXBuildFile section */
@@ -55,7 +54,6 @@
 		CE7B6C1A2C355E4F0048A792 /* anonimasAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = anonimasAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CE7B6C272C355F2E0048A792 /* EventCheckInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCheckInView.swift; sourceTree = "<group>"; };
 		CEF73FD02C36A25C005A4EAF /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
-		CEF73FD22C36AB16005A4EAF /* LocationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationButton.swift; sourceTree = "<group>"; };
 		CEF73FD42C36AF3C005A4EAF /* NavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationView.swift; sourceTree = "<group>"; };
 		CEF73FD62C36AF8E005A4EAF /* ArenaContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArenaContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -116,7 +114,6 @@
 				CE7B6C012C355E4E0048A792 /* Assets.xcassets */,
 				CE7B6C032C355E4E0048A792 /* Preview Content */,
 				CEF73FD02C36A25C005A4EAF /* MapView.swift */,
-				CEF73FD22C36AB16005A4EAF /* LocationButton.swift */,
 				CEF73FD42C36AF3C005A4EAF /* NavigationView.swift */,
 				CEF73FD62C36AF8E005A4EAF /* ArenaContentView.swift */,
 			);
@@ -284,7 +281,6 @@
 				CEF73FD52C36AF3C005A4EAF /* NavigationView.swift in Sources */,
 				CE7B6C002C355E4D0048A792 /* ContentView.swift in Sources */,
 				CE7B6BFE2C355E4D0048A792 /* anonimasAppApp.swift in Sources */,
-				CEF73FD32C36AB16005A4EAF /* LocationButton.swift in Sources */,
 				A11BB2382C35B06700D75D67 /* HomeView.swift in Sources */,
 				CE7B6C282C355F2E0048A792 /* EventCheckInView.swift in Sources */,
 			);

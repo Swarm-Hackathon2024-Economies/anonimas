@@ -1,26 +1,79 @@
+//import SwiftUI
 //
-//  NavigationView.swift
-//  anonimasApp
+//struct NavigationView: View {
+//    @State var isPresented: Bool = true
+//    var body: some View {
+//        MapView()
+//            .sheet(isPresented: $isPresented, content: {
+//                ArenaContentView()
+//                    .frame(width: 300, height: 200)
+//                    .presentationDetents([.fraction(0.2)])
+//                    .presentationDragIndicator(.visible)
+//            })
+//    }
+//}
 //
-//  Created by takuya on 7/4/24.
-//
+//#Preview {
+//    NavigationView()
+//}
 
 import SwiftUI
+import MapKit
+
+struct Location: Identifiable {
+    let id = UUID()
+    let name: String
+    let coordinate: CLLocationCoordinate2D
+    let description: String
+}
 
 struct NavigationView: View {
-    @State var isPresented: Bool = true
+    @State private var region = MKCoordinateRegion(
+        center: CLLocationCoordinate2D(latitude:  33.154321, longitude: -96.835426),
+        span: MKCoordinateSpan(latitudeDelta: 0.003, longitudeDelta: 0.003)
+    )
+    
+    @State private var locations: [Location] = [
+//        Location(name: "東京タワー", coordinate: CLLocationCoordinate2D(latitude: 35.6586, longitude: 139.7454), description: "東京のランドマーク"),
+        Location(name: "Toyota-Stadium", coordinate: CLLocationCoordinate2D(latitude:  33.154321, longitude: -96.835426), description: "Toyota-Stadium"),
+//        Location(name: "スカイツリー", coordinate: CLLocationCoordinate2D(latitude: 35.7101, longitude: 139.8107), description: "世界一高い自立式電波塔")
+    ]
+    
+    @State private var selectedLocation: Location?
+    @State private var showingSheet = false
+    
     var body: some View {
-        MapView()
-            .sheet(isPresented: $isPresented, content: {
-                ArenaContentView()
-                    .frame(width: 300, height: 200)
-                    .presentationDetents([
-                        .medium])
-                    .presentationDetents([.height(250)])
+        Map(coordinateRegion: $region, annotationItems: locations) { location in
+            MapAnnotation(coordinate: location.coordinate) {
+                Image(systemName: "building.columns.circle.fill")
+                    .foregroundColor(.red)
+                    .onTapGesture {
+                        selectedLocation = location
+                        showingSheet = true
+                    }
+            }
+        }
+        .mapControls() {
+            MapCompass()
+                .mapControlVisibility(.visible)
+            MapPitchToggle()
+                .mapControlVisibility(.visible)
+            MapScaleView()
+                .mapControlVisibility(.visible)
+            MapUserLocationButton()
+                .mapControlVisibility(.visible)
+        }
+        .sheet(isPresented: $showingSheet) {
+            if let location = selectedLocation {
+                ArenaContentView(location: location)
+                    .presentationDetents([.medium])
                     .presentationDragIndicator(.visible)
-            })
+            }
+        }
     }
 }
+
+
 
 #Preview {
     NavigationView()
