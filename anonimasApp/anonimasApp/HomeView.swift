@@ -3,7 +3,8 @@ import SwiftUI
 struct HomeView: View {
     @State private var isPresented: Bool = false
     @State private var isListPresented: Bool = false
-    
+    @State private var isTeamPresented: Bool = false
+
     var body: some View {
         let gradient = LinearGradient(
             stops: [
@@ -40,6 +41,12 @@ struct HomeView: View {
                     Text("ConnectView")
                 }
                 .offset(CGSize(width: 0, height: -100))
+                Button(action: {
+                    isTeamPresented = true
+                }) {
+                    Text("TeamView")
+                }
+                .offset(CGSize(width: 0, height: -100))
                 
             }
         }
@@ -48,6 +55,9 @@ struct HomeView: View {
         }
         .fullScreenCover(isPresented: $isListPresented) {
             ConnectionListView()
+        }
+        .fullScreenCover(isPresented: $isTeamPresented) {
+            TeamView()
         }
     }
 }
