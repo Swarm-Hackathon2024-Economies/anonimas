@@ -28,7 +28,7 @@ struct ContentView: View {
                     .tabItem {
                         Image("SteerlingWheel")
                     }
-                EventCheckInView()
+                TeamView()
                     .tabItem {
                         Image(systemName: "football.fill")
                         Text("Team")
