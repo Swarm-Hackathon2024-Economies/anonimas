@@ -18,20 +18,7 @@ struct EventCheckInView: View {
             }) {
                 Text("戻る")
             }
-            ZStack {
-                //            Image("MemberCard")
-                //                .resizable()
-                //                .scaledToFit()
-                //                .background(HeightPreferenceSetter())
-                //                .onPreferenceChange(HeightPreferenceKey.self) { height in
-                //                    self.imageHeight = height
-                //                                }
-                
-            }
-            //                .offset(y: (UIScreen.main.bounds.height / 1)
-            //                        - (imageHeight / 2)
-            //                ) UIScreen.main.bounds.height
-            
+
             Image("PullButton")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
@@ -54,13 +41,15 @@ struct EventCheckInView: View {
                             }
                         }
                 )
+                .zIndex(2)
             
             Image("DownArrow")  // テキストを変更
                 .foregroundColor(.white)
-                .padding(.top, 10)  // .bottom から .top に変更
+                .padding(.top, 30)
+                .zIndex(1)
             
             if isCheckedIn {
-                Text("Fu*kYou!!!!!!!As****Hol******！")
+                Text("Conguratulations！!!!!!!!")
                     .foregroundColor(.green)
                     .font(.headline)
             }
@@ -72,7 +61,7 @@ struct EventCheckInView: View {
     }
     
     func checkIn() {
-        // ここでチェックインのロジックを実装
+        // ここでタグを引いた時のロジックを実装
         isCheckedIn = true
     }
 }
@@ -80,22 +69,5 @@ struct EventCheckInView: View {
 struct EventCheckInView_Previews: PreviewProvider {
     static var previews: some View {
         EventCheckInView()
-    }
-}
-
-struct HeightPreferenceKey: PreferenceKey {
-    static var defaultValue: CGFloat = 0
-    
-    static func reduce(value: inout CGFloat, nextValue: () -> CGFloat) {
-        value = nextValue()
-    }
-}
-
-struct HeightPreferenceSetter: View {
-    var body: some View {
-        GeometryReader { geometry in
-            Color.clear
-                .preference(key: HeightPreferenceKey.self, value: geometry.size.height)
-        }
     }
 }
