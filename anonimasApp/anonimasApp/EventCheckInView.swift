@@ -8,7 +8,8 @@ struct EventCheckInView: View {
     @State private var isDragging: Bool = false
     @State private var imageHeight: CGFloat = 0
     @State private var isPresented: Bool = false
-    
+    @State private var imageScal: CGFloat = 1
+    @State private var textScale: CGFloat = 1
     let gradient = LinearGradient(gradient: Gradient(colors: [.cyan,.blue]), startPoint: .topLeading, endPoint: .bottomTrailing)
     
     var body: some View {
@@ -30,6 +31,7 @@ struct EventCheckInView: View {
                         .onChanged { gesture in
                             self.dragOffset = gesture.translation
                             self.isDragging = true
+                            self.imageScal = 1 +  (gesture.translation.height / 300)
                         }
                         .onEnded { _ in
                             if self.dragOffset.height > 50 {  // 条件を反転
@@ -38,10 +40,12 @@ struct EventCheckInView: View {
                             withAnimation(.spring()) {
                                 self.dragOffset = .zero
                                 self.isDragging = false
+                                self.imageScal = 1
                             }
                         }
                 )
                 .zIndex(2)
+                .scaleEffect(self.imageScal)
             
             Image("DownArrow")  // テキストを変更
                 .foregroundColor(.white)
@@ -50,6 +54,12 @@ struct EventCheckInView: View {
             
             if isCheckedIn {
                 Text("Conguratulations！!!!!!!!")
+                    .foregroundColor(.green)
+                    .font(.headline)
+                    .scaleEffect(textScale)
+                    .animation(.easeInOut(duration: 2), value: textScale)
+            } else {
+                Text("Pull!!!!!!!!!!!!!!!!!!!!!")
                     .foregroundColor(.green)
                     .font(.headline)
             }
@@ -63,6 +73,7 @@ struct EventCheckInView: View {
     func checkIn() {
         // ここでタグを引いた時のロジックを実装
         isCheckedIn = true
+        textScale += 0.3
     }
 }
 
