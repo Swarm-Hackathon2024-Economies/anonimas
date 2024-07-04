@@ -8,8 +8,17 @@
 import SwiftUI
 
 struct NavigationView: View {
+    @State var isPresented: Bool = true
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        MapView()
+            .sheet(isPresented: $isPresented, content: {
+                ArenaContentView()
+                    .frame(width: 300, height: 200)
+                    .presentationDetents([
+                        .medium])
+                    .presentationDetents([.height(250)])
+                    .presentationDragIndicator(.visible)
+            })
     }
 }
 
