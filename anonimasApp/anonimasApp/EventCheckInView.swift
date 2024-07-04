@@ -19,7 +19,7 @@ struct EventCheckInView: View {
             }) {
                 Text("戻る")
             }
-
+            
             Image("PullButton")
                 .resizable()
                 .aspectRatio(contentMode: .fit)

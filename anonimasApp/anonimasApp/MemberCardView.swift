@@ -5,8 +5,11 @@ struct MemberCardView: View {
 
     var body: some View {
         ZStack {
-            Rectangle()
-                .fill(gradient)
+            //            Rectangle()
+            //                .fill(gradient)
+            //                .frame(width: 350, height: 180)
+            Image("MemberCardBG")
+                .resizable()
                 .frame(width: 350, height: 180)
                 .cornerRadius(15.0)
             VStack(spacing: 10) {
