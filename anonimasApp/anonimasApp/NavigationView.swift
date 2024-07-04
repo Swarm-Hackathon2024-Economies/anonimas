@@ -1,21 +1,3 @@
-//import SwiftUI
-//
-//struct NavigationView: View {
-//    @State var isPresented: Bool = true
-//    var body: some View {
-//        MapView()
-//            .sheet(isPresented: $isPresented, content: {
-//                ArenaContentView()
-//                    .frame(width: 300, height: 200)
-//                    .presentationDetents([.fraction(0.2)])
-//                    .presentationDragIndicator(.visible)
-//            })
-//    }
-//}
-//
-//#Preview {
-//    NavigationView()
-//}
 
 import SwiftUI
 import MapKit
@@ -35,8 +17,7 @@ struct NavigationView: View {
     
     @State private var locations: [Location] = [
 //        Location(name: "東京タワー", coordinate: CLLocationCoordinate2D(latitude: 35.6586, longitude: 139.7454), description: "東京のランドマーク"),
-        Location(name: "Toyota-Stadium", coordinate: CLLocationCoordinate2D(latitude:  33.154321, longitude: -96.835426), description: "Toyota-Stadium"),
-//        Location(name: "スカイツリー", coordinate: CLLocationCoordinate2D(latitude: 35.7101, longitude: 139.8107), description: "世界一高い自立式電波塔")
+        Location(name: "Toyota-Stadium", coordinate: CLLocationCoordinate2D(latitude:  33.154321, longitude: -96.835426), description: "Toyota-Stadium")
     ]
     
     @State private var selectedLocation: Location?
@@ -72,7 +53,6 @@ struct NavigationView: View {
         }
     }
 }
-
 
 
 #Preview {
