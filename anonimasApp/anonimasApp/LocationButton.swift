@@ -1,18 +1,16 @@
-//
-//  LocationButton.swift
-//  anonimasApp
-//
-//  Created by takuya on 7/4/24.
-//
-
 import SwiftUI
+import MapKit
 
 struct LocationButton: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+    
+    @Binding var position: MapCameraPosition
 
-#Preview {
-    LocationButton()
+    var body: some View {
+        
+        Button {
+            position = .userLocation(fallback: .automatic)
+        } label: {
+            Label("ふるさと",systemImage: "location.circle")
+        }
+    }
 }
