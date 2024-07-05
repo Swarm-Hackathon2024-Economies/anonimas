@@ -65,7 +65,7 @@ struct EventCheckInView: View {
             }
         }
         .fullScreenCover(isPresented: $isPresented) {
-            HomeView()
+            ContentView()
         }
         .padding()
     }

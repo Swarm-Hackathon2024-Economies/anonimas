@@ -5,12 +5,9 @@ struct MemberCardView: View {
 
     var body: some View {
         ZStack {
-            //            Rectangle()
-            //                .fill(gradient)
-            //                .frame(width: 350, height: 180)
             Image("MemberCardBG")
                 .resizable()
-                .frame(width: 350, height: 180)
+                .frame(width: 347, height: 183)
                 .cornerRadius(15.0)
             VStack(spacing: 10) {
                 HStack(spacing: 20) {
@@ -25,17 +22,17 @@ struct MemberCardView: View {
                 ZStack {
                     HStack {
                         Rectangle()
-                            .fill(.black.opacity(0.2))
-                            .frame(width: 300, height: 70)
+                            .fill(.black.opacity(0.5))
+                            .frame(width: 317, height: 81)
                             .cornerRadius(10.0)
                     }
-                    HStack(spacing: 16) {
+                    HStack(alignment:.bottom,spacing: 16) {
                         VStack(spacing: 0) {
-                            Image(systemName: "star.fill")
+                            Image("TeamIcon-6")
                                 .resizable()
-                                .frame(width: 33, height: 33)
+                                .frame(width: 52, height: 48)
                             Text("Cowboys")
-                                .font(.footnote)
+                                .font(.custom("SF-Pro", size: 14))
                                 .foregroundColor(.white)
                         }
                         VStack(spacing: 0) {
@@ -43,7 +40,7 @@ struct MemberCardView: View {
                                 .font(.title)
                                 .fontWeight(.black)
                             Text("Connect")
-                                .font(.footnote)
+                                .font(.custom("SF-Pro", size: 14))
                         }
                         .foregroundColor(.white)
                         VStack(spacing: 0) {
@@ -51,7 +48,7 @@ struct MemberCardView: View {
                                 .font(.title)
                                 .fontWeight(.black)
                             Text("Flag")
-                                .font(.footnote)
+                                .font(.custom("SF-Pro", size: 14))
                         }
                         .foregroundColor(.white)
                         VStack(spacing: 0) {
@@ -59,7 +56,7 @@ struct MemberCardView: View {
                                 .font(.title)
                                 .fontWeight(.black)
                             Text("Touchdown")
-                                .font(.footnote)
+                                .font(.custom("SF-Pro", size: 14))
                         }
                         .foregroundColor(.white)
                     }
