@@ -32,7 +32,7 @@ struct ConnectionListView: View {
                 endPoint: UnitPoint(x: 1, y: 1)
             )
             .edgesIgnoringSafeArea(.all)
-            VStack {
+            ScrollView {
                 ForEach(Array(users.enumerated()), id: \.element.id) { index, user in
                     ConnectionCardView(userName: user.userName, touchdownNumber: user.touchdownNumber, flagNumber: user.flagNumber, imageNumber: (index % 4) + 1)
                         .padding(.bottom, 10)
