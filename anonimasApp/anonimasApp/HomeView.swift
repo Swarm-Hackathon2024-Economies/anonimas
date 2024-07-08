@@ -38,25 +38,45 @@ struct HomeView: View {
                         .font(.custom("SF-Pro", size: 22))
                         .offset(CGSize(width: -120, height: -150))
                     HStack(spacing: 13) {
-                        ZStack {
+                        ZStack(alignment:.leading) {
                             Rectangle()
                                 .frame(width: 164, height: 114)
                                 .foregroundColor(.white)
                                 .cornerRadius(8)
                                 .shadow(radius: 5,y: 5)
+                            VStack(alignment:.leading, spacing: 13) {
+                                Text("1,234")
+                                    .font(.title)
+                                    .bold()
+                                    .foregroundColor(.green)
+                                Text("Sefety Score")
+                                    .font(.custom("SF-Pro", size: 16))
+                                    .foregroundColor(.gray)
+                            }
+                            .offset(CGSize(width: 13.0, height: 0))
                         }
-                        ZStack {
+                        ZStack(alignment:.leading) {
                             Rectangle()
                                 .frame(width: 164, height: 114)
                                 .foregroundColor(.white)
                                 .cornerRadius(8)
                                 .shadow(radius: 5,y: 5)
+                            VStack(alignment:.leading, spacing: 13) {
+                                Text("1,329,234")
+                                    .font(.title)
+                                    .bold()
+                                    .foregroundColor(.blue)
+                                Text("Team Point")
+                                    .font(.custom("SF-Pro", size: 16))
+                                    .foregroundColor(.gray)
+                            }
+                            .offset(CGSize(width: 13.0, height: 0))
                         }
                     }
                     .offset(CGSize(width: 0, height: -150))
                     Text("Flags")
                         .font(.custom("SF-Pro", size: 22))
-                        .offset(CGSize(width: -120, height: -150))
+                        .offset(CGSize(width: -140, height: -140))
                 }
             }
         }
