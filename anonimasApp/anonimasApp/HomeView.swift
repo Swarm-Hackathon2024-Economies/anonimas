@@ -2,7 +2,7 @@ import SwiftUI
 
 struct HomeView: View {
     @State private var isPresented: Bool = false
-
+    
     var body: some View {
         let gradient = LinearGradient(
             stops: [
@@ -13,12 +13,10 @@ struct HomeView: View {
             endPoint: UnitPoint(x: 1, y: 1)
         )
         VStack {
-
             ZStack {
-                Circle()
-                    .fill(gradient)
-                    .frame(width: 3000, height: 3000)
-                    .offset(CGSize(width: 0, height: -1600))
+                Image("Screen-Back")
+                    .resizable()
+                    .frame(height: 880)
                 VStack {
                     HStack {
                         Image(systemName: "list.dash")
@@ -34,6 +32,7 @@ struct HomeView: View {
                         MemberCardView()
                     }
                     .offset(CGSize(width: 0, height: -120))
+                    .shadow(radius: 2, x: 0, y: 5)
                     Text("Your Stats")
                         .font(.custom("SF-Pro", size: 22))
                         .offset(CGSize(width: -120, height: -150))

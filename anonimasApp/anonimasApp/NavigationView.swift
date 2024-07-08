@@ -16,7 +16,7 @@ struct NavigationView: View {
     )
     
     @State private var locations: [Location] = [
-//        Location(name: "東京タワー", coordinate: CLLocationCoordinate2D(latitude: 35.6586, longitude: 139.7454), description: "東京のランドマーク"),
+        //        Location(name: "東京タワー", coordinate: CLLocationCoordinate2D(latitude: 35.6586, longitude: 139.7454), description: "東京のランドマーク"),
         Location(name: "Toyota-Stadium", coordinate: CLLocationCoordinate2D(latitude:  33.154321, longitude: -96.835426), description: "Toyota-Stadium")
     ]
     

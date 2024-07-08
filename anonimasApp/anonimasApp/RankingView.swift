@@ -23,22 +23,14 @@ struct RankingView: View {
     )
     
     var body: some View {
-        VStack {
-            ZStack {
-                Circle()
-                    .fill(gradient)
-                    .frame(width: 3000, height: 3000)
-                    .offset(CGSize(width: 0, height: -1650))
-                MemberCardView()
-                    .offset(CGSize(width: 0, height: -270))
-            }.zIndex(1)
-            ScrollView {
-                ForEach(Array(users.enumerated()), id: \.element.id) { index, user in
-                    ConnectionCardView(userName: user.userName, touchdownNumber: user.touchdownNumber, flagNumber: user.flagNumber, imageNumber: (index % 4) + 1)
-                        .padding(.bottom, 10)
-                        .searchable(text: $searchText)
-                }
-            }.zIndex(2)
+        ZStack {
+            Image("Screen-Back")
+                .resizable()
+                .frame(height: 880)
+            Text("To be continue...!")
+                .font(.title)
+                .bold()
+                .foregroundColor(.blue)
         }
     }
 }

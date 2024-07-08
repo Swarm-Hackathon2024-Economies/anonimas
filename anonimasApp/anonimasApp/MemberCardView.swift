@@ -2,7 +2,7 @@ import SwiftUI
 
 struct MemberCardView: View {
     let gradient = LinearGradient(gradient: Gradient(colors: [.gray,.blue,.green]), startPoint: .topLeading, endPoint: .bottomTrailing)
-
+    
     var body: some View {
         ZStack {
             Image("MemberCardBG")
