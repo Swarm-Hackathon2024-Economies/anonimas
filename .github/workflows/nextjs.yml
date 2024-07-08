@@ -52,7 +52,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          cache: ${{ steps.detect-package-manager.outputs.manager }}
+          cache: "npm"
+          cache-dependency-path: anonimasfrontend/package-lock.json
       - name: Setup Pages
         uses: actions/configure-pages@v5
         with:
@@ -78,7 +79,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./out
+          path: ./anonimasfrontend/out
 
   # Deployment job
   deploy:
