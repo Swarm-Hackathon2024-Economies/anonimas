@@ -10,16 +10,7 @@ struct User: Identifiable {
 
 struct ConnectionListView: View {
     @State private var searchText = ""
-    let users: [User] = [
-        User(userName: "Kento Izumi", touchdownNumber: 823, flagNumber: 286),
-        User(userName: "Yuki Tanaka", touchdownNumber: 512, flagNumber: 129),
-        User(userName: "Yuki Tanaka", touchdownNumber: 512, flagNumber: 129),
-        User(userName: "Yuki Tanaka", touchdownNumber: 512, flagNumber: 129),
-        User(userName: "Sakura Yamamoto", touchdownNumber: 670, flagNumber: 354),
-        User(userName: "Sakura Yamamoto", touchdownNumber: 670, flagNumber: 354),
-        User(userName: "Sakura Yamamoto", touchdownNumber: 670, flagNumber: 354),
-        User(userName: "Sakura Yamamoto", touchdownNumber: 670, flagNumber: 354)
-    ]
+    @EnvironmentObject var friendData: FriendData
     
     var body: some View {
         ZStack {
@@ -33,8 +24,8 @@ struct ConnectionListView: View {
             )
             .edgesIgnoringSafeArea(.all)
             ScrollView {
-                ForEach(Array(users.enumerated()), id: \.element.id) { index, user in
-                    ConnectionCardView(userName: user.userName, touchdownNumber: user.touchdownNumber, flagNumber: user.flagNumber, imageNumber: (index % 4) + 1)
+                ForEach(friendData.friends.filter { $0.isPulled }, id: \.id) { friend in
+                    ConnectionCardView(userName: friend.name, touchdownNumber: friend.touchdown, flagNumber: friend.flag, imageNumber: (friend.id % 4) + 1)
                         .padding(.bottom, 10)
                         .searchable(text: $searchText)
                 }
@@ -45,4 +36,5 @@ struct ConnectionListView: View {
 
 #Preview {
     ConnectionListView()
+        .environmentObject(FriendData())
 }

@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct anonimasAppApp: App {
+    @StateObject private var friendData = FriendData()
+
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(friendData)
         }
     }
 }
