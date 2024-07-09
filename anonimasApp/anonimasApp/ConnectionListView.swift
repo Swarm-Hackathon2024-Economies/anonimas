@@ -14,7 +14,7 @@ struct ConnectionListView: View {
         User(userName: "Kento Izumi", touchdownNumber: 823, flagNumber: 286),
         User(userName: "Yuki Tanaka", touchdownNumber: 512, flagNumber: 129),
         User(userName: "Yuki Tanaka", touchdownNumber: 512, flagNumber: 129),
-        User(userName: "Yuki Tanaka", touchdownNumber: 512, flagNumber: 129),
+        User(userName: "Yuki Tanaka1", touchdownNumber: 512, flagNumber: 129),
         User(userName: "Sakura Yamamoto", touchdownNumber: 670, flagNumber: 354),
         User(userName: "Sakura Yamamoto", touchdownNumber: 670, flagNumber: 354),
         User(userName: "Sakura Yamamoto", touchdownNumber: 670, flagNumber: 354),

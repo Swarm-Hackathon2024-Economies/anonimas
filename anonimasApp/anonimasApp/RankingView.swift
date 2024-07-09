@@ -2,6 +2,7 @@ import SwiftUI
 
 struct RankingView: View {
     @State private var searchText = ""
+    @State private var isPresented = false
     let users: [User] = [
         User(userName: "Kento Izumi", touchdownNumber: 823, flagNumber: 286),
         User(userName: "Yuki Tanaka", touchdownNumber: 512, flagNumber: 129),
@@ -31,6 +32,12 @@ struct RankingView: View {
                 .font(.title)
                 .bold()
                 .foregroundColor(.blue)
+            Button(action: {
+                isPresented = true
+            }) {
+                PienView()
+            }
+                
         }
     }
 }
