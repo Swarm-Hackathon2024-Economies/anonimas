@@ -15,6 +15,14 @@
 		A1BDC0602C370FC900841FF9 /* TeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BDC05F2C370FC900841FF9 /* TeamView.swift */; };
 		A1EA505A2C36F8FA0067D7E3 /* SF-Pro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1EA50592C36F8FA0067D7E3 /* SF-Pro.ttf */; };
 		CE1EA06F2C371374004AF4C9 /* RankingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1EA06E2C371374004AF4C9 /* RankingView.swift */; };
+		CE4CCCA42C3D0F490087C951 /* TouchDownConnectClipApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4CCCA32C3D0F490087C951 /* TouchDownConnectClipApp.swift */; };
+		CE4CCCA62C3D0F490087C951 /* PullTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4CCCA52C3D0F490087C951 /* PullTagView.swift */; };
+		CE4CCCA82C3D0F4A0087C951 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE4CCCA72C3D0F4A0087C951 /* Assets.xcassets */; };
+		CE4CCCAB2C3D0F4A0087C951 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE4CCCAA2C3D0F4A0087C951 /* Preview Assets.xcassets */; };
+		CE4CCCB72C3D0F4A0087C951 /* TouchDownConnectClipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4CCCB62C3D0F4A0087C951 /* TouchDownConnectClipTests.swift */; };
+		CE4CCCC12C3D0F4B0087C951 /* TouchDownConnectClipUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4CCCC02C3D0F4B0087C951 /* TouchDownConnectClipUITests.swift */; };
+		CE4CCCC32C3D0F4B0087C951 /* TouchDownConnectClipUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4CCCC22C3D0F4B0087C951 /* TouchDownConnectClipUITestsLaunchTests.swift */; };
+		CE4CCCC62C3D0F4B0087C951 /* TouchDownConnectClip.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = CE4CCCA12C3D0F490087C951 /* TouchDownConnectClip.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CE7B6BFE2C355E4D0048A792 /* anonimasAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7B6BFD2C355E4D0048A792 /* anonimasAppApp.swift */; };
 		CE7B6C002C355E4D0048A792 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7B6BFF2C355E4D0048A792 /* ContentView.swift */; };
 		CE7B6C022C355E4E0048A792 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE7B6C012C355E4E0048A792 /* Assets.xcassets */; };
@@ -29,6 +37,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		CE4CCCB32C3D0F4A0087C951 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE7B6BF22C355E4D0048A792 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE4CCCA02C3D0F490087C951;
+			remoteInfo = TouchDownConnectClip;
+		};
+		CE4CCCBD2C3D0F4A0087C951 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE7B6BF22C355E4D0048A792 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE4CCCA02C3D0F490087C951;
+			remoteInfo = TouchDownConnectClip;
+		};
+		CE4CCCC42C3D0F4B0087C951 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE7B6BF22C355E4D0048A792 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE4CCCA02C3D0F490087C951;
+			remoteInfo = TouchDownConnectClip;
+		};
 		CE7B6C0B2C355E4F0048A792 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CE7B6BF22C355E4D0048A792 /* Project object */;
@@ -45,6 +74,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		CE4CCCC72C3D0F4B0087C951 /* Embed App Clips */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/AppClips";
+			dstSubfolderSpec = 16;
+			files = (
+				CE4CCCC62C3D0F4B0087C951 /* TouchDownConnectClip.app in Embed App Clips */,
+			);
+			name = "Embed App Clips";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		A1141BAD2C36A26D003096C3 /* ConnectionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionListView.swift; sourceTree = "<group>"; };
 		A1141BAF2C36A481003096C3 /* ConnectionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionCardView.swift; sourceTree = "<group>"; };
@@ -55,6 +98,19 @@
 		A1EA50582C36F6C40067D7E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		A1EA50592C36F8FA0067D7E3 /* SF-Pro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro.ttf"; sourceTree = "<group>"; };
 		CE1EA06E2C371374004AF4C9 /* RankingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingView.swift; sourceTree = "<group>"; };
+		CE1FA4D92C3D91D400CCB90D /* anonimasApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = anonimasApp.entitlements; sourceTree = "<group>"; };
+		CE4CCCA12C3D0F490087C951 /* TouchDownConnectClip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchDownConnectClip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE4CCCA32C3D0F490087C951 /* TouchDownConnectClipApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchDownConnectClipApp.swift; sourceTree = "<group>"; };
+		CE4CCCA52C3D0F490087C951 /* PullTagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullTagView.swift; sourceTree = "<group>"; };
+		CE4CCCA72C3D0F4A0087C951 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE4CCCAA2C3D0F4A0087C951 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CE4CCCAC2C3D0F4A0087C951 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE4CCCAD2C3D0F4A0087C951 /* TouchDownConnectClip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TouchDownConnectClip.entitlements; sourceTree = "<group>"; };
+		CE4CCCB22C3D0F4A0087C951 /* TouchDownConnectClipTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TouchDownConnectClipTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE4CCCB62C3D0F4A0087C951 /* TouchDownConnectClipTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchDownConnectClipTests.swift; sourceTree = "<group>"; };
+		CE4CCCBC2C3D0F4A0087C951 /* TouchDownConnectClipUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TouchDownConnectClipUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE4CCCC02C3D0F4B0087C951 /* TouchDownConnectClipUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchDownConnectClipUITests.swift; sourceTree = "<group>"; };
+		CE4CCCC22C3D0F4B0087C951 /* TouchDownConnectClipUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchDownConnectClipUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CE7B6BFA2C355E4D0048A792 /* anonimasApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = anonimasApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7B6BFD2C355E4D0048A792 /* anonimasAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = anonimasAppApp.swift; sourceTree = "<group>"; };
 		CE7B6BFF2C355E4D0048A792 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,6 +128,27 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CE4CCC9E2C3D0F490087C951 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE4CCCAF2C3D0F4A0087C951 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE4CCCB92C3D0F4A0087C951 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CE7B6BF72C355E4D0048A792 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -96,6 +173,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE4CCCA22C3D0F490087C951 /* TouchDownConnectClip */ = {
+			isa = PBXGroup;
+			children = (
+				CE4CCCA32C3D0F490087C951 /* TouchDownConnectClipApp.swift */,
+				CE4CCCA52C3D0F490087C951 /* PullTagView.swift */,
+				CE4CCCA72C3D0F4A0087C951 /* Assets.xcassets */,
+				CE4CCCAC2C3D0F4A0087C951 /* Info.plist */,
+				CE4CCCAD2C3D0F4A0087C951 /* TouchDownConnectClip.entitlements */,
+				CE4CCCA92C3D0F4A0087C951 /* Preview Content */,
+			);
+			path = TouchDownConnectClip;
+			sourceTree = "<group>";
+		};
+		CE4CCCA92C3D0F4A0087C951 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CE4CCCAA2C3D0F4A0087C951 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CE4CCCB52C3D0F4A0087C951 /* TouchDownConnectClipTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE4CCCB62C3D0F4A0087C951 /* TouchDownConnectClipTests.swift */,
+			);
+			path = TouchDownConnectClipTests;
+			sourceTree = "<group>";
+		};
+		CE4CCCBF2C3D0F4B0087C951 /* TouchDownConnectClipUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CE4CCCC02C3D0F4B0087C951 /* TouchDownConnectClipUITests.swift */,
+				CE4CCCC22C3D0F4B0087C951 /* TouchDownConnectClipUITestsLaunchTests.swift */,
+			);
+			path = TouchDownConnectClipUITests;
+			sourceTree = "<group>";
+		};
 		CE7B6BF12C355E4D0048A792 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +218,9 @@
 				A1EA50592C36F8FA0067D7E3 /* SF-Pro.ttf */,
 				CE7B6C0D2C355E4F0048A792 /* anonimasAppTests */,
 				CE7B6C172C355E4F0048A792 /* anonimasAppUITests */,
+				CE4CCCA22C3D0F490087C951 /* TouchDownConnectClip */,
+				CE4CCCB52C3D0F4A0087C951 /* TouchDownConnectClipTests */,
+				CE4CCCBF2C3D0F4B0087C951 /* TouchDownConnectClipUITests */,
 				CE7B6BFB2C355E4D0048A792 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -113,6 +231,9 @@
 				CE7B6BFA2C355E4D0048A792 /* anonimasApp.app */,
 				CE7B6C0A2C355E4F0048A792 /* anonimasAppTests.xctest */,
 				CE7B6C142C355E4F0048A792 /* anonimasAppUITests.xctest */,
+				CE4CCCA12C3D0F490087C951 /* TouchDownConnectClip.app */,
+				CE4CCCB22C3D0F4A0087C951 /* TouchDownConnectClipTests.xctest */,
+				CE4CCCBC2C3D0F4A0087C951 /* TouchDownConnectClipUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -120,6 +241,7 @@
 		CE7B6BFC2C355E4D0048A792 /* anonimasApp */ = {
 			isa = PBXGroup;
 			children = (
+				CE1FA4D92C3D91D400CCB90D /* anonimasApp.entitlements */,
 				A1EA50582C36F6C40067D7E3 /* Info.plist */,
 				CE7B6BFD2C355E4D0048A792 /* anonimasAppApp.swift */,
 				CE7B6BFF2C355E4D0048A792 /* ContentView.swift */,
@@ -168,6 +290,59 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		CE4CCCA02C3D0F490087C951 /* TouchDownConnectClip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE4CCCCE2C3D0F4B0087C951 /* Build configuration list for PBXNativeTarget "TouchDownConnectClip" */;
+			buildPhases = (
+				CE4CCC9D2C3D0F490087C951 /* Sources */,
+				CE4CCC9E2C3D0F490087C951 /* Frameworks */,
+				CE4CCC9F2C3D0F490087C951 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TouchDownConnectClip;
+			productName = TouchDownConnectClip;
+			productReference = CE4CCCA12C3D0F490087C951 /* TouchDownConnectClip.app */;
+			productType = "com.apple.product-type.application.on-demand-install-capable";
+		};
+		CE4CCCB12C3D0F4A0087C951 /* TouchDownConnectClipTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE4CCCCF2C3D0F4B0087C951 /* Build configuration list for PBXNativeTarget "TouchDownConnectClipTests" */;
+			buildPhases = (
+				CE4CCCAE2C3D0F4A0087C951 /* Sources */,
+				CE4CCCAF2C3D0F4A0087C951 /* Frameworks */,
+				CE4CCCB02C3D0F4A0087C951 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE4CCCB42C3D0F4A0087C951 /* PBXTargetDependency */,
+			);
+			name = TouchDownConnectClipTests;
+			productName = TouchDownConnectClipTests;
+			productReference = CE4CCCB22C3D0F4A0087C951 /* TouchDownConnectClipTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CE4CCCBB2C3D0F4A0087C951 /* TouchDownConnectClipUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE4CCCD02C3D0F4B0087C951 /* Build configuration list for PBXNativeTarget "TouchDownConnectClipUITests" */;
+			buildPhases = (
+				CE4CCCB82C3D0F4A0087C951 /* Sources */,
+				CE4CCCB92C3D0F4A0087C951 /* Frameworks */,
+				CE4CCCBA2C3D0F4A0087C951 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE4CCCBE2C3D0F4A0087C951 /* PBXTargetDependency */,
+			);
+			name = TouchDownConnectClipUITests;
+			productName = TouchDownConnectClipUITests;
+			productReference = CE4CCCBC2C3D0F4A0087C951 /* TouchDownConnectClipUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		CE7B6BF92C355E4D0048A792 /* anonimasApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE7B6C1E2C355E4F0048A792 /* Build configuration list for PBXNativeTarget "anonimasApp" */;
@@ -175,10 +350,12 @@
 				CE7B6BF62C355E4D0048A792 /* Sources */,
 				CE7B6BF72C355E4D0048A792 /* Frameworks */,
 				CE7B6BF82C355E4D0048A792 /* Resources */,
+				CE4CCCC72C3D0F4B0087C951 /* Embed App Clips */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CE4CCCC52C3D0F4B0087C951 /* PBXTargetDependency */,
 			);
 			name = anonimasApp;
 			productName = anonimasApp;
@@ -231,6 +408,17 @@
 				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
+					CE4CCCA02C3D0F490087C951 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					CE4CCCB12C3D0F4A0087C951 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = CE4CCCA02C3D0F490087C951;
+					};
+					CE4CCCBB2C3D0F4A0087C951 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = CE4CCCA02C3D0F490087C951;
+					};
 					CE7B6BF92C355E4D0048A792 = {
 						CreatedOnToolsVersion = 15.4;
 					};
@@ -260,11 +448,37 @@
 				CE7B6BF92C355E4D0048A792 /* anonimasApp */,
 				CE7B6C092C355E4F0048A792 /* anonimasAppTests */,
 				CE7B6C132C355E4F0048A792 /* anonimasAppUITests */,
+				CE4CCCA02C3D0F490087C951 /* TouchDownConnectClip */,
+				CE4CCCB12C3D0F4A0087C951 /* TouchDownConnectClipTests */,
+				CE4CCCBB2C3D0F4A0087C951 /* TouchDownConnectClipUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		CE4CCC9F2C3D0F490087C951 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE4CCCAB2C3D0F4A0087C951 /* Preview Assets.xcassets in Resources */,
+				CE4CCCA82C3D0F4A0087C951 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE4CCCB02C3D0F4A0087C951 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE4CCCBA2C3D0F4A0087C951 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CE7B6BF82C355E4D0048A792 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -292,6 +506,32 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		CE4CCC9D2C3D0F490087C951 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE4CCCA62C3D0F490087C951 /* PullTagView.swift in Sources */,
+				CE4CCCA42C3D0F490087C951 /* TouchDownConnectClipApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE4CCCAE2C3D0F4A0087C951 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE4CCCB72C3D0F4A0087C951 /* TouchDownConnectClipTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE4CCCB82C3D0F4A0087C951 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE4CCCC12C3D0F4B0087C951 /* TouchDownConnectClipUITests.swift in Sources */,
+				CE4CCCC32C3D0F4B0087C951 /* TouchDownConnectClipUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CE7B6BF62C355E4D0048A792 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -332,6 +572,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		CE4CCCB42C3D0F4A0087C951 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE4CCCA02C3D0F490087C951 /* TouchDownConnectClip */;
+			targetProxy = CE4CCCB32C3D0F4A0087C951 /* PBXContainerItemProxy */;
+		};
+		CE4CCCBE2C3D0F4A0087C951 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE4CCCA02C3D0F490087C951 /* TouchDownConnectClip */;
+			targetProxy = CE4CCCBD2C3D0F4A0087C951 /* PBXContainerItemProxy */;
+		};
+		CE4CCCC52C3D0F4B0087C951 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE4CCCA02C3D0F490087C951 /* TouchDownConnectClip */;
+			targetProxy = CE4CCCC42C3D0F4B0087C951 /* PBXContainerItemProxy */;
+		};
 		CE7B6C0C2C355E4F0048A792 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CE7B6BF92C355E4D0048A792 /* anonimasApp */;
@@ -345,6 +600,146 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		CE4CCCC82C3D0F4B0087C951 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TouchDownConnectClip/TouchDownConnectClip.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TouchDownConnectClip/Preview Content\"";
+				DEVELOPMENT_TEAM = LANULV72W5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TouchDownConnectClip/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = anonimasApp;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.takutaku.SwiftApp.anonimasApp.Clip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE4CCCC92C3D0F4B0087C951 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TouchDownConnectClip/TouchDownConnectClip.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TouchDownConnectClip/Preview Content\"";
+				DEVELOPMENT_TEAM = LANULV72W5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TouchDownConnectClip/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = anonimasApp;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.takutaku.SwiftApp.anonimasApp.Clip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CE4CCCCA2C3D0F4B0087C951 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LANULV72W5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.takutaku.SwiftApp.anonimasApp.TouchDownConnectClipTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TouchDownConnectClip.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TouchDownConnectClip";
+			};
+			name = Debug;
+		};
+		CE4CCCCB2C3D0F4B0087C951 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LANULV72W5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.takutaku.SwiftApp.anonimasApp.TouchDownConnectClipTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TouchDownConnectClip.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TouchDownConnectClip";
+			};
+			name = Release;
+		};
+		CE4CCCCC2C3D0F4B0087C951 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LANULV72W5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.takutaku.SwiftApp.anonimasApp.TouchDownConnectClipUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TouchDownConnectClip;
+			};
+			name = Debug;
+		};
+		CE4CCCCD2C3D0F4B0087C951 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LANULV72W5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.takutaku.SwiftApp.anonimasApp.TouchDownConnectClipUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TouchDownConnectClip;
+			};
+			name = Release;
+		};
 		CE7B6C1C2C355E4F0048A792 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -467,8 +862,10 @@
 		CE7B6C1F2C355E4F0048A792 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = anonimasApp/anonimasApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"anonimasApp/Preview Content\"";
@@ -485,7 +882,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.takutaku.SwiftApp.anonimasApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -497,8 +894,10 @@
 		CE7B6C202C355E4F0048A792 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = anonimasApp/anonimasApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"anonimasApp/Preview Content\"";
@@ -515,7 +914,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.takutaku.SwiftApp.anonimasApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -603,6 +1002,33 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CE4CCCCE2C3D0F4B0087C951 /* Build configuration list for PBXNativeTarget "TouchDownConnectClip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE4CCCC82C3D0F4B0087C951 /* Debug */,
+				CE4CCCC92C3D0F4B0087C951 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE4CCCCF2C3D0F4B0087C951 /* Build configuration list for PBXNativeTarget "TouchDownConnectClipTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE4CCCCA2C3D0F4B0087C951 /* Debug */,
+				CE4CCCCB2C3D0F4B0087C951 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE4CCCD02C3D0F4B0087C951 /* Build configuration list for PBXNativeTarget "TouchDownConnectClipUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE4CCCCC2C3D0F4B0087C951 /* Debug */,
+				CE4CCCCD2C3D0F4B0087C951 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CE7B6BF52C355E4D0048A792 /* Build configuration list for PBXProject "anonimasApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

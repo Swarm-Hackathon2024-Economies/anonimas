@@ -26,7 +26,7 @@ struct TeamView: View {
         ZStack {
             Image("Screen-Back")
                 .resizable()
-                .frame(height: 880)
+                .frame(height: 990)
             ScrollView {
                 VStack(alignment: .center) {
                     LazyVGrid(columns: columns, spacing: 20) {
