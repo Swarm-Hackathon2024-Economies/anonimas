@@ -4,14 +4,6 @@ struct HomeView: View {
     @State private var isPresented: Bool = false
     
     var body: some View {
-        let gradient = LinearGradient(
-            stops: [
-                Gradient.Stop(color: Color(red: 0.21, green: 0.38, blue: 0.79), location: 0.00),
-                Gradient.Stop(color: Color(red: 0.06, green: 0.16, blue: 0.4), location: 1.00),
-            ],
-            startPoint: UnitPoint(x: 0, y: 0),
-            endPoint: UnitPoint(x: 1, y: 1)
-        )
         VStack {
             ZStack {
                 Image("Screen-Back")
@@ -29,7 +21,7 @@ struct HomeView: View {
                     Button(action: {
                         isPresented = true
                     }) {
-                        MemberCardView()
+                        MemberCardView(cardSize: .large)
                     }
                     .offset(CGSize(width: 0, height: -120))
                     .shadow(radius: 2, x: 0, y: 5)

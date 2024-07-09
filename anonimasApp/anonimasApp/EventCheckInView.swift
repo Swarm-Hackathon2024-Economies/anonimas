@@ -18,13 +18,15 @@ struct EventCheckInView: View {
                 .resizable()
                 .frame(height: 880)
             VStack{
+                MemberCardView(cardSize: .small)
+                    .offset(y: -200)
                 Button(action: {
                     isPresented = true //trueにしないと画面遷移されない
                 }) {
                     Text("戻る")
                         .font(.title)
                         .bold()
-                        .foregroundColor(.white)
+                        .foregroundColor(.black)
                 }
                 
                 Image("PullButton")
