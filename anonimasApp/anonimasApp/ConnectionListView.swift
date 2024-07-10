@@ -11,7 +11,7 @@ struct User: Identifiable {
 struct ConnectionListView: View {
     @State private var searchText = ""
     @EnvironmentObject var friendData: FriendData
-    
+
     var body: some View {
         ZStack {
             LinearGradient(
