@@ -10,16 +10,20 @@ struct EventCheckInView: View {
     @State private var isPresented: Bool = false
     @State private var imageScal: CGFloat = 1
     @State private var textScale: CGFloat = 1
+    @State private var showCard: Bool = false
     let gradient = LinearGradient(gradient: Gradient(colors: [.cyan,.blue]), startPoint: .topLeading, endPoint: .bottomTrailing)
-    
+
     var body: some View {
         ZStack {
             Image("Screen-Back")
                 .resizable()
                 .frame(height: 880)
             VStack{
-                MemberCardView(cardSize: .small)
-                    .offset(y: -200)
+                if showCard {
+                    MemberCardView(cardSize: .small)
+                        .offset(y: -200)
+                }
+
                 Button(action: {
                     isPresented = true //trueにしないと画面遷移されない
                 }) {
@@ -28,7 +32,6 @@ struct EventCheckInView: View {
                         .bold()
                         .foregroundColor(.black)
                 }
-                
                 Image("PullButton")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
@@ -55,12 +58,12 @@ struct EventCheckInView: View {
                     )
                     .zIndex(2)
                     .scaleEffect(self.imageScal)
-                
+
                 Image("DownArrow")  // テキストを変更
                     .foregroundColor(.white)
                     .padding(.top, 30)
                     .zIndex(1)
-                
+
                 if isCheckedIn {
                     Text("Conguratulations！!!!!!!!")
                         .foregroundColor(.green)
@@ -78,8 +81,14 @@ struct EventCheckInView: View {
             }
             .padding()
         }
+        .onAppear {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                withAnimation {
+                    self.showCard = true
+                }
+            }
+        }
     }
-    
     func checkIn() {
         // ここでタグを引いた時のロジックを実装
         isCheckedIn = true
