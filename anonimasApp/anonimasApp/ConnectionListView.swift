@@ -1,16 +1,12 @@
 import SwiftUI
-
-struct User: Identifiable {
-    let id = UUID()
-    let userName: String
-    let touchdownNumber: Int
-    let flagNumber: Int
-}
-
+import SwiftData
 
 struct ConnectionListView: View {
     @State private var searchText = ""
-    @EnvironmentObject var friendData: FriendList
+    @EnvironmentObject var friendList: FriendList
+
+    @Environment(\.modelContext) private var context
+    @Query private var friendData: [FriendData]
 
     var body: some View {
         ZStack {
@@ -24,7 +20,7 @@ struct ConnectionListView: View {
             )
             .edgesIgnoringSafeArea(.all)
             ScrollView {
-                ForEach(friendData.friends.filter { $0.isPulled }, id: \.id) { friend in
+                ForEach(getFriendsByIds(ids: friendData.map{data in data.id}, from: friendList.friends), id: \.id) { friend in
                     ConnectionCardView(userName: friend.name, touchdownNumber: friend.touchdown, flagNumber: friend.flag, imageNumber: (friend.id % 4) + 1)
                         .padding(.bottom, 10)
                         .searchable(text: $searchText)
@@ -32,6 +28,10 @@ struct ConnectionListView: View {
             }
         }
     }
+    func getFriendsByIds(ids: [Int], from friends: [Friend]) -> [Friend] {
+        friends.filter { ids.contains($0.id) }
+    }
+
 }
 
 #Preview {

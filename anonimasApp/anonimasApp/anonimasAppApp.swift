@@ -1,20 +1,15 @@
-//
-//  anonimasAppApp.swift
-//  anonimasApp
-//
-//  Created by takuya on 7/3/24.
-//
-
 import SwiftUI
+import SwiftData
 
 @main
 struct anonimasAppApp: App {
-    @StateObject private var friendData = FriendList()
+    @StateObject private var friendList = FriendList()
 
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environmentObject(friendData)
+                .environmentObject(friendList)
+                .modelContainer(for: FriendData.self)
         }
     }
 }

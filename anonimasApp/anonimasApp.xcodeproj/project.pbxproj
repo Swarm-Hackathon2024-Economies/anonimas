@@ -14,6 +14,7 @@
 		A19FE6B52C3849E2006FB7A1 /* TeamListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19FE6B42C3849E2006FB7A1 /* TeamListView.swift */; };
 		A19FE6B72C3D933F006FB7A1 /* FriendData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19FE6B62C3D933F006FB7A1 /* FriendData.swift */; };
 		A1BDC0602C370FC900841FF9 /* TeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BDC05F2C370FC900841FF9 /* TeamView.swift */; };
+		A1C9DE612C3FE4A400EAC80F /* FriendDataContextProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C9DE602C3FE4A300EAC80F /* FriendDataContextProvider.swift */; };
 		A1EA505A2C36F8FA0067D7E3 /* SF-Pro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1EA50592C36F8FA0067D7E3 /* SF-Pro.ttf */; };
 		CE1EA06F2C371374004AF4C9 /* RankingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1EA06E2C371374004AF4C9 /* RankingView.swift */; };
 		CE4CCCA42C3D0F490087C951 /* TouchDownConnectClipApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4CCCA32C3D0F490087C951 /* TouchDownConnectClipApp.swift */; };
@@ -97,6 +98,7 @@
 		A19FE6B42C3849E2006FB7A1 /* TeamListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamListView.swift; sourceTree = "<group>"; };
 		A19FE6B62C3D933F006FB7A1 /* FriendData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendData.swift; sourceTree = "<group>"; };
 		A1BDC05F2C370FC900841FF9 /* TeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamView.swift; sourceTree = "<group>"; };
+		A1C9DE602C3FE4A300EAC80F /* FriendDataContextProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDataContextProvider.swift; sourceTree = "<group>"; };
 		A1EA50582C36F6C40067D7E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		A1EA50592C36F8FA0067D7E3 /* SF-Pro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro.ttf"; sourceTree = "<group>"; };
 		CE1EA06E2C371374004AF4C9 /* RankingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingView.swift; sourceTree = "<group>"; };
@@ -253,6 +255,7 @@
 				A1141BAF2C36A481003096C3 /* ConnectionCardView.swift */,
 				CE7B6C272C355F2E0048A792 /* EventCheckInView.swift */,
 				A19FE6B62C3D933F006FB7A1 /* FriendData.swift */,
+				A1C9DE602C3FE4A300EAC80F /* FriendDataContextProvider.swift */,
 				A11BB2352C35917200D75D67 /* MemberCardView.swift */,
 				CE7B6C012C355E4E0048A792 /* Assets.xcassets */,
 				A1BDC05F2C370FC900841FF9 /* TeamView.swift */,
@@ -545,6 +548,7 @@
 				A1141BAE2C36A26D003096C3 /* ConnectionListView.swift in Sources */,
 				A1141BB02C36A481003096C3 /* ConnectionCardView.swift in Sources */,
 				A11BB2362C35917200D75D67 /* MemberCardView.swift in Sources */,
+				A1C9DE612C3FE4A400EAC80F /* FriendDataContextProvider.swift in Sources */,
 				CEF73FD12C36A25C005A4EAF /* MapView.swift in Sources */,
 				CEF73FD52C36AF3C005A4EAF /* NavigationView.swift in Sources */,
 				CE7B6C002C355E4D0048A792 /* ContentView.swift in Sources */,

@@ -1,4 +1,5 @@
 import SwiftUI
+import SwiftData
 
 struct EventCheckInView: View {
     @State private var eventCode: String = ""
@@ -11,6 +12,10 @@ struct EventCheckInView: View {
     @State private var imageScal: CGFloat = 1
     @State private var textScale: CGFloat = 1
     @State private var showCard: Bool = false
+
+    @Environment(\.modelContext) private var context
+    @Query private var friendData: [FriendData]
+
     let gradient = LinearGradient(gradient: Gradient(colors: [.cyan,.blue]), startPoint: .topLeading, endPoint: .bottomTrailing)
 
     var body: some View {
@@ -93,6 +98,8 @@ struct EventCheckInView: View {
         // ここでタグを引いた時のロジックを実装
         isCheckedIn = true
         textScale += 0.3
+        let data = FriendData(id: 2, name: "Tetsu Fujino")
+        context.insert(data)
     }
 }
 

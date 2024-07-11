@@ -59,10 +59,10 @@ struct TeamView: View {
             Image("COWBOYS-player")
                 .resizable()
                 .frame(width: 345, height: 292)
-                .offset(CGSize(width: 0, height: -200))
+                .offset(CGSize(width: 0, height: -240))
             HStack {
                 Image("COWBOYS-logo")
-                    .offset(CGSize(width: 0, height: 10))
+                    .offset(CGSize(width: 0, height: -30))
                 ZStack {
                     Rectangle()
                         .frame(width: 182, height: 90)
@@ -88,9 +88,9 @@ struct TeamView: View {
                     .frame(width: 182, alignment: .leading)
                     .offset(CGSize(width: 18.0, height: 0))
                 }
-                .offset(CGSize(width: 0, height: 20))
+                .offset(CGSize(width: 0, height: -10))
             }
-            .offset(CGSize(width: 0, height: -140))
+            .offset(CGSize(width: 0, height: -150))
         }
     }
 }

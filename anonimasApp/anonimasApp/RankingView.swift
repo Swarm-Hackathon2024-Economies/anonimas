@@ -2,16 +2,6 @@ import SwiftUI
 
 struct RankingView: View {
     @State private var searchText = ""
-    let users: [User] = [
-        User(userName: "Kento Izumi", touchdownNumber: 823, flagNumber: 286),
-        User(userName: "Yuki Tanaka", touchdownNumber: 512, flagNumber: 129),
-        User(userName: "Yuki Tanaka", touchdownNumber: 512, flagNumber: 129),
-        User(userName: "Yuki Tanaka", touchdownNumber: 512, flagNumber: 129),
-        User(userName: "Sakura Yamamoto", touchdownNumber: 670, flagNumber: 354),
-        User(userName: "Sakura Yamamoto", touchdownNumber: 670, flagNumber: 354),
-        User(userName: "Sakura Yamamoto", touchdownNumber: 670, flagNumber: 354),
-        User(userName: "Sakura Yamamoto", touchdownNumber: 670, flagNumber: 354)
-    ]
     
     let gradient = LinearGradient(
         stops: [
