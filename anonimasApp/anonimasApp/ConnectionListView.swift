@@ -10,7 +10,7 @@ struct User: Identifiable {
 
 struct ConnectionListView: View {
     @State private var searchText = ""
-    @EnvironmentObject var friendData: FriendData
+    @EnvironmentObject var friendData: FriendList
 
     var body: some View {
         ZStack {
@@ -36,5 +36,5 @@ struct ConnectionListView: View {
 
 #Preview {
     ConnectionListView()
-        .environmentObject(FriendData())
+        .environmentObject(FriendList())
 }

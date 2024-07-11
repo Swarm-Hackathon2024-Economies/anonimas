@@ -8,7 +8,7 @@ struct Friend: Identifiable {
     var isPulled: Bool = false
 }
 
-class FriendData: ObservableObject {
+class FriendList: ObservableObject {
     @Published var friends: [Friend] = [
         Friend(id: 1, name: "Kento Izumi", touchdown: 11, flag: 123, isPulled: true),
         Friend(id: 2, name: "Tetsu Fujino", touchdown: 22, flag: 234),

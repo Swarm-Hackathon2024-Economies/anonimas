@@ -9,7 +9,7 @@ import SwiftUI
 
 @main
 struct anonimasAppApp: App {
-    @StateObject private var friendData = FriendData()
+    @StateObject private var friendData = FriendList()
 
     var body: some Scene {
         WindowGroup {
