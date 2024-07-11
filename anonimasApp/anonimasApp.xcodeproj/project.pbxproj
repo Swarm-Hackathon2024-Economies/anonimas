@@ -12,7 +12,7 @@
 		A11BB2362C35917200D75D67 /* MemberCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11BB2352C35917200D75D67 /* MemberCardView.swift */; };
 		A11BB2382C35B06700D75D67 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11BB2372C35B06700D75D67 /* HomeView.swift */; };
 		A19FE6B52C3849E2006FB7A1 /* TeamListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19FE6B42C3849E2006FB7A1 /* TeamListView.swift */; };
-		A19FE6B72C3D933F006FB7A1 /* FriendList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19FE6B62C3D933F006FB7A1 /* FriendList.swift */; };
+		A19FE6B72C3D933F006FB7A1 /* FriendData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19FE6B62C3D933F006FB7A1 /* FriendData.swift */; };
 		A1BDC0602C370FC900841FF9 /* TeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BDC05F2C370FC900841FF9 /* TeamView.swift */; };
 		A1EA505A2C36F8FA0067D7E3 /* SF-Pro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1EA50592C36F8FA0067D7E3 /* SF-Pro.ttf */; };
 		CE1EA06F2C371374004AF4C9 /* RankingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1EA06E2C371374004AF4C9 /* RankingView.swift */; };
@@ -95,7 +95,7 @@
 		A11BB2352C35917200D75D67 /* MemberCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberCardView.swift; sourceTree = "<group>"; };
 		A11BB2372C35B06700D75D67 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		A19FE6B42C3849E2006FB7A1 /* TeamListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamListView.swift; sourceTree = "<group>"; };
-		A19FE6B62C3D933F006FB7A1 /* FriendList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendList.swift; sourceTree = "<group>"; };
+		A19FE6B62C3D933F006FB7A1 /* FriendData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendData.swift; sourceTree = "<group>"; };
 		A1BDC05F2C370FC900841FF9 /* TeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamView.swift; sourceTree = "<group>"; };
 		A1EA50582C36F6C40067D7E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		A1EA50592C36F8FA0067D7E3 /* SF-Pro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro.ttf"; sourceTree = "<group>"; };
@@ -252,7 +252,7 @@
 				A1141BAD2C36A26D003096C3 /* ConnectionListView.swift */,
 				A1141BAF2C36A481003096C3 /* ConnectionCardView.swift */,
 				CE7B6C272C355F2E0048A792 /* EventCheckInView.swift */,
-				A19FE6B62C3D933F006FB7A1 /* FriendList.swift */,
+				A19FE6B62C3D933F006FB7A1 /* FriendData.swift */,
 				A11BB2352C35917200D75D67 /* MemberCardView.swift */,
 				CE7B6C012C355E4E0048A792 /* Assets.xcassets */,
 				A1BDC05F2C370FC900841FF9 /* TeamView.swift */,
@@ -552,7 +552,7 @@
 				A11BB2382C35B06700D75D67 /* HomeView.swift in Sources */,
 				CE7B6C282C355F2E0048A792 /* EventCheckInView.swift in Sources */,
 				CE1EA06F2C371374004AF4C9 /* RankingView.swift in Sources */,
-				A19FE6B72C3D933F006FB7A1 /* FriendList.swift in Sources */,
+				A19FE6B72C3D933F006FB7A1 /* FriendData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
