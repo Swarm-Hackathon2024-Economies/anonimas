@@ -17,9 +17,9 @@ export default function RootLayout({
   return (
     <html lang="en">
     <meta
-        name={"touchdownconnectswarm"}
+        name={"apple-itunes-app"}
         content={"app-clip-bundle-id=com.touchdownconnectswarm.app.clip"}
-        app-id={"3333333"}
+        app-id={"LANULV72W5"}
     />
       <body className={inter.className}>{children}</body>
     </html>

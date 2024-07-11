@@ -1,11 +1,11 @@
 {
     "appclips": {
-        "apps": ["9JA89QQLNQ.com.example.app.Clip"]
+        "apps": ["LANULV72W5.com.takutaku.SwiftApp.TouchDownSwarm.Clip"]
     },
     "applinks": {
         "details": [
             {
-                "appID": "9JA89QQLNQ.com.example.app",
+                "appID": "LANULV72W5.com.takutaku.SwiftApp.TouchDownSwarm.Clip",
                 "components": [
                     { "/": "/touchdown/* },
                 ]
@@ -13,9 +13,9 @@
         ]
     },
     "activitycontinuation": {
-        "apps": ["9JA89QQLNQ.com.example.app"]
+        "apps": ["LANULV72W5.com.takutaku.SwiftApp.TouchDownSwarm.Clip"]
     },
     "webcredentials": {
-        "apps": ["9JA89QQLNQ.com.example.app"]
+        "apps": ["LANULV72W5.com.takutaku.SwiftApp.TouchDownSwarm.Clip"]
     },
 }
