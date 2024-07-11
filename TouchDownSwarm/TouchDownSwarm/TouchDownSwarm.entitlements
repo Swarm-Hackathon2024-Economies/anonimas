@@ -6,9 +6,5 @@
 	<array>
 		<string>appclips:swarm-hackathon2024-economies.github.io/anonimas/touchdown</string>
 	</array>
-	<key>com.apple.developer.parent-application-identifiers</key>
-	<array>
-		<string>$(AppIdentifierPrefix)com.takutaku.SwiftApp.TouchDownSwarm</string>
-	</array>
 </dict>
 </plist>

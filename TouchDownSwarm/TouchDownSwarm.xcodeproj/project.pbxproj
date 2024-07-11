@@ -55,6 +55,8 @@
 		CE5E903B2C3FEB92006F2B89 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CE5E903D2C3FEB92006F2B89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE5E903E2C3FEB92006F2B89 /* TouchDownSwarmClip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TouchDownSwarmClip.entitlements; sourceTree = "<group>"; };
+		CE5E90462C3FEDEC006F2B89 /* TouchDownSwarm.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TouchDownSwarm.entitlements; sourceTree = "<group>"; };
+		CE5E90472C400865006F2B89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,8 @@
 		CE5E901F2C3FEB6C006F2B89 /* TouchDownSwarm */ = {
 			isa = PBXGroup;
 			children = (
+				CE5E90472C400865006F2B89 /* Info.plist */,
+				CE5E90462C3FEDEC006F2B89 /* TouchDownSwarm.entitlements */,
 				CE5E90202C3FEB6C006F2B89 /* TouchDownSwarmApp.swift */,
 				CE5E90222C3FEB6C006F2B89 /* ContentView.swift */,
 				CE5E90242C3FEB6E006F2B89 /* Assets.xcassets */,
@@ -385,12 +389,14 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TouchDownSwarm/TouchDownSwarm.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TouchDownSwarm/Preview Content\"";
 				DEVELOPMENT_TEAM = LANULV72W5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TouchDownSwarm/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -415,12 +421,14 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TouchDownSwarm/TouchDownSwarm.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TouchDownSwarm/Preview Content\"";
 				DEVELOPMENT_TEAM = LANULV72W5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TouchDownSwarm/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
