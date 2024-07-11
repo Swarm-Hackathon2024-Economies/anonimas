@@ -1,0 +1,21 @@
+{
+    "appclips": {
+        "apps": ["9JA89QQLNQ.com.example.app.Clip"]
+    },
+    "applinks": {
+        "details": [
+            {
+                "appID": "9JA89QQLNQ.com.example.app",
+                "components": [
+                    { "/": "/touchdown/* },
+                ]
+            }
+        ]
+    },
+    "activitycontinuation": {
+        "apps": ["9JA89QQLNQ.com.example.app"]
+    },
+    "webcredentials": {
+        "apps": ["9JA89QQLNQ.com.example.app"]
+    },
+}
