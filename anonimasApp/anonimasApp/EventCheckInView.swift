@@ -28,68 +28,70 @@ struct EventCheckInView: View {
                     MemberCardView(cardSize: .small)
                         .offset(y: -200)
                 }
-
-                Button(action: {
-                    isPresented = true //trueにしないと画面遷移されない
-                }) {
-                    Text("戻る")
-                        .font(.title)
-                        .bold()
-                        .foregroundColor(.black)
-                }
-                Image("PullButton")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 200, height: 200)
-                    .foregroundColor(.white)
-                    .offset(y: 30 + max(dragOffset.height, 0))  // オフセットを反転
-                    .gesture(
-                        DragGesture()
-                            .onChanged { gesture in
-                                self.dragOffset = gesture.translation
-                                self.isDragging = true
-                                self.imageScal = 1 +  (gesture.translation.height / 300)
-                            }
-                            .onEnded { _ in
-                                if self.dragOffset.height > 50 {  // 条件を反転
-                                    self.checkIn()
+                VStack {
+                    Button(action: {
+                        isPresented = true //trueにしないと画面遷移されない
+                    }) {
+                        Text("戻る")
+                            .font(.title)
+                            .bold()
+                            .foregroundColor(.black)
+                    }
+                    Image("PullButton")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 200, height: 200)
+                        .foregroundColor(.white)
+                        .offset(y: 30 + max(dragOffset.height, 0))  // オフセットを反転
+                        .gesture(
+                            DragGesture()
+                                .onChanged { gesture in
+                                    self.dragOffset = gesture.translation
+                                    self.isDragging = true
+                                    self.imageScal = 1 +  (gesture.translation.height / 300)
                                 }
-                                withAnimation(.spring()) {
-                                    self.dragOffset = .zero
-                                    self.isDragging = false
-                                    self.imageScal = 1
+                                .onEnded { _ in
+                                    if self.dragOffset.height > 50 {  // 条件を反転
+                                        self.checkIn()
+                                    }
+                                    withAnimation(.spring()) {
+                                        self.dragOffset = .zero
+                                        self.isDragging = false
+                                        self.imageScal = 1
+                                    }
                                 }
-                            }
-                    )
-                    .zIndex(2)
-                    .scaleEffect(self.imageScal)
+                        )
+                        .zIndex(2)
+                        .scaleEffect(self.imageScal)
 
-                Image("DownArrow")  // テキストを変更
-                    .foregroundColor(.white)
-                    .padding(.top, 30)
-                    .zIndex(1)
+                    Image("DownArrow")  // テキストを変更
+                        .foregroundColor(.white)
+                        .padding(.top, 30)
+                        .zIndex(1)
 
-                if isCheckedIn {
-                    Text("Conguratulations！!!!!!!!")
-                        .foregroundColor(.green)
-                        .font(.headline)
-                        .scaleEffect(textScale)
-                        .animation(.easeInOut(duration: 2), value: textScale)
-                } else {
-                    Text("Pull!!!!!!!!!!!!!!!!!!!!!")
-                        .foregroundColor(.green)
-                        .font(.headline)
+                    if isCheckedIn {
+                        Text("Conguratulations！!!!!!!!")
+                            .foregroundColor(.green)
+                            .font(.headline)
+                            .scaleEffect(textScale)
+                            .animation(.easeInOut(duration: 2), value: textScale)
+                    } else {
+                        Text("Pull!!!!!!!!!!!!!!!!!!!!!")
+                            .foregroundColor(.green)
+                            .font(.headline)
+                    }
                 }
+                .offset(CGSize(width: 0, height: showCard ? -95 : 0))
+                .fullScreenCover(isPresented: $isPresented) {
+                    ContentView()
+                }
+                .padding()
             }
-            .fullScreenCover(isPresented: $isPresented) {
-                ContentView()
-            }
-            .padding()
-        }
-        .onAppear {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                withAnimation {
-                    self.showCard = true
+            .onAppear {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                    withAnimation {
+                        self.showCard = true
+                    }
                 }
             }
         }
