@@ -53,7 +53,7 @@
       <EnvironmentVariables>
          <EnvironmentVariable
             key = "_XCAppClipURL"
-            value = "https://codebakka.github.io/maekeyMaker/"
+            value = "https://swarm-hackathon2024-economies.github.io/anonimas/touchdown"
             isEnabled = "YES">
          </EnvironmentVariable>
       </EnvironmentVariables>

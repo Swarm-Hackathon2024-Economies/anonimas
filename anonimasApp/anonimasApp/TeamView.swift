@@ -5,7 +5,7 @@ struct TeamView: View {
     @State private var searchText = ""
     @State private var selectedIndex: Int?
     
-    let items = Array(1...6)
+    let items = Array(1...9)
     
     let columns = [
         GridItem(.flexible()),

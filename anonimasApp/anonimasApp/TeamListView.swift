@@ -2,7 +2,7 @@ import SwiftUI
 
 struct TeamListView: View {
     @State private var selectedIndex: Int?
-    let items = Array(1...6)
+    let items = Array(1...9)
 
     let columns = [
         GridItem(.flexible()),

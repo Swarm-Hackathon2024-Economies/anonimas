@@ -52,8 +52,8 @@
       </BuildableProductRunnable>
       <EnvironmentVariables>
          <EnvironmentVariable
-            key = "_X"
-            value = ""
+            key = "_XCAppClipURL"
+            value = "https://swarm-hackathon2024-economies.github.io/anonimas/touchdown"
             isEnabled = "YES">
          </EnvironmentVariable>
       </EnvironmentVariables>
