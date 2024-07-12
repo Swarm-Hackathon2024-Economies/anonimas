@@ -13,6 +13,16 @@ const nextConfig = {
     env: {
         BASE_PATH: isProd ? `/${repoName}` : "",
     },
+    experimental: {
+        headers() {
+            return [
+                {
+                    source: "/.well-known/apple-app-site-association",
+                    headers: [{ key: "content-type", value: "application/json" }]
+                }
+            ];
+        }
+    }
 };
 
 export default nextConfig;
