@@ -12,10 +12,22 @@
 		CE5E90252C3FEB6E006F2B89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE5E90242C3FEB6E006F2B89 /* Assets.xcassets */; };
 		CE5E90282C3FEB6E006F2B89 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE5E90272C3FEB6E006F2B89 /* Preview Assets.xcassets */; };
 		CE5E90352C3FEB90006F2B89 /* TouchDownSwarmClipApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5E90342C3FEB90006F2B89 /* TouchDownSwarmClipApp.swift */; };
-		CE5E90372C3FEB90006F2B89 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5E90362C3FEB90006F2B89 /* ContentView.swift */; };
+		CE5E90372C3FEB90006F2B89 /* PullTageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5E90362C3FEB90006F2B89 /* PullTageView.swift */; };
 		CE5E90392C3FEB92006F2B89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE5E90382C3FEB92006F2B89 /* Assets.xcassets */; };
 		CE5E903C2C3FEB92006F2B89 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE5E903B2C3FEB92006F2B89 /* Preview Assets.xcassets */; };
 		CE5E90412C3FEB92006F2B89 /* TouchDownSwarmClip.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = CE5E90322C3FEB90006F2B89 /* TouchDownSwarmClip.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CE5E904F2C400A62006F2B89 /* ConnectionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5E90482C400A62006F2B89 /* ConnectionListView.swift */; };
+		CE5E90502C400A62006F2B89 /* MemberCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5E90492C400A62006F2B89 /* MemberCardView.swift */; };
+		CE5E90512C400A62006F2B89 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5E904A2C400A62006F2B89 /* HomeView.swift */; };
+		CE5E90522C400A62006F2B89 /* FriendData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5E904B2C400A62006F2B89 /* FriendData.swift */; };
+		CE5E90532C400A62006F2B89 /* TeamListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5E904C2C400A62006F2B89 /* TeamListView.swift */; };
+		CE5E90542C400A62006F2B89 /* ConnectionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5E904D2C400A62006F2B89 /* ConnectionCardView.swift */; };
+		CE5E90552C400A62006F2B89 /* EventCheckInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5E904E2C400A62006F2B89 /* EventCheckInView.swift */; };
+		CE5E90572C400A6A006F2B89 /* TeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5E90562C400A6A006F2B89 /* TeamView.swift */; };
+		CE5E905C2C400A79006F2B89 /* NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5E90582C400A79006F2B89 /* NavigationView.swift */; };
+		CE5E905D2C400A79006F2B89 /* RankingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5E90592C400A79006F2B89 /* RankingView.swift */; };
+		CE5E905E2C400A79006F2B89 /* ArenaContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5E905A2C400A79006F2B89 /* ArenaContentView.swift */; };
+		CE5E905F2C400A79006F2B89 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5E905B2C400A79006F2B89 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,13 +62,26 @@
 		CE5E90272C3FEB6E006F2B89 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CE5E90322C3FEB90006F2B89 /* TouchDownSwarmClip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchDownSwarmClip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE5E90342C3FEB90006F2B89 /* TouchDownSwarmClipApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchDownSwarmClipApp.swift; sourceTree = "<group>"; };
-		CE5E90362C3FEB90006F2B89 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CE5E90362C3FEB90006F2B89 /* PullTageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullTageView.swift; sourceTree = "<group>"; };
 		CE5E90382C3FEB92006F2B89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE5E903B2C3FEB92006F2B89 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CE5E903D2C3FEB92006F2B89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE5E903E2C3FEB92006F2B89 /* TouchDownSwarmClip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TouchDownSwarmClip.entitlements; sourceTree = "<group>"; };
 		CE5E90462C3FEDEC006F2B89 /* TouchDownSwarm.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TouchDownSwarm.entitlements; sourceTree = "<group>"; };
 		CE5E90472C400865006F2B89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CE5E90482C400A62006F2B89 /* ConnectionListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConnectionListView.swift; path = ../../anonimasApp/anonimasApp/ConnectionListView.swift; sourceTree = "<group>"; };
+		CE5E90492C400A62006F2B89 /* MemberCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MemberCardView.swift; path = ../../anonimasApp/anonimasApp/MemberCardView.swift; sourceTree = "<group>"; };
+		CE5E904A2C400A62006F2B89 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeView.swift; path = ../../anonimasApp/anonimasApp/HomeView.swift; sourceTree = "<group>"; };
+		CE5E904B2C400A62006F2B89 /* FriendData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FriendData.swift; path = ../../anonimasApp/anonimasApp/FriendData.swift; sourceTree = "<group>"; };
+		CE5E904C2C400A62006F2B89 /* TeamListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TeamListView.swift; path = ../../anonimasApp/anonimasApp/TeamListView.swift; sourceTree = "<group>"; };
+		CE5E904D2C400A62006F2B89 /* ConnectionCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConnectionCardView.swift; path = ../../anonimasApp/anonimasApp/ConnectionCardView.swift; sourceTree = "<group>"; };
+		CE5E904E2C400A62006F2B89 /* EventCheckInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventCheckInView.swift; path = ../../anonimasApp/anonimasApp/EventCheckInView.swift; sourceTree = "<group>"; };
+		CE5E90562C400A6A006F2B89 /* TeamView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TeamView.swift; path = ../../anonimasApp/anonimasApp/TeamView.swift; sourceTree = "<group>"; };
+		CE5E90582C400A79006F2B89 /* NavigationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NavigationView.swift; path = ../../anonimasApp/anonimasApp/NavigationView.swift; sourceTree = "<group>"; };
+		CE5E90592C400A79006F2B89 /* RankingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RankingView.swift; path = ../../anonimasApp/anonimasApp/RankingView.swift; sourceTree = "<group>"; };
+		CE5E905A2C400A79006F2B89 /* ArenaContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArenaContentView.swift; path = ../../anonimasApp/anonimasApp/ArenaContentView.swift; sourceTree = "<group>"; };
+		CE5E905B2C400A79006F2B89 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapView.swift; path = ../../anonimasApp/anonimasApp/MapView.swift; sourceTree = "<group>"; };
+		CE5E90602C400A85006F2B89 /* SF-Pro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro.ttf"; path = "../../anonimasApp/SF-Pro.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +127,20 @@
 				CE5E90462C3FEDEC006F2B89 /* TouchDownSwarm.entitlements */,
 				CE5E90202C3FEB6C006F2B89 /* TouchDownSwarmApp.swift */,
 				CE5E90222C3FEB6C006F2B89 /* ContentView.swift */,
+				CE5E904D2C400A62006F2B89 /* ConnectionCardView.swift */,
+				CE5E90482C400A62006F2B89 /* ConnectionListView.swift */,
+				CE5E904E2C400A62006F2B89 /* EventCheckInView.swift */,
+				CE5E904B2C400A62006F2B89 /* FriendData.swift */,
+				CE5E904A2C400A62006F2B89 /* HomeView.swift */,
+				CE5E90492C400A62006F2B89 /* MemberCardView.swift */,
+				CE5E904C2C400A62006F2B89 /* TeamListView.swift */,
+				CE5E90562C400A6A006F2B89 /* TeamView.swift */,
+				CE5E905A2C400A79006F2B89 /* ArenaContentView.swift */,
+				CE5E905B2C400A79006F2B89 /* MapView.swift */,
+				CE5E90582C400A79006F2B89 /* NavigationView.swift */,
+				CE5E90592C400A79006F2B89 /* RankingView.swift */,
 				CE5E90242C3FEB6E006F2B89 /* Assets.xcassets */,
+				CE5E90602C400A85006F2B89 /* SF-Pro.ttf */,
 				CE5E90262C3FEB6E006F2B89 /* Preview Content */,
 			);
 			path = TouchDownSwarm;
@@ -120,7 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				CE5E90342C3FEB90006F2B89 /* TouchDownSwarmClipApp.swift */,
-				CE5E90362C3FEB90006F2B89 /* ContentView.swift */,
+				CE5E90362C3FEB90006F2B89 /* PullTageView.swift */,
 				CE5E90382C3FEB92006F2B89 /* Assets.xcassets */,
 				CE5E903D2C3FEB92006F2B89 /* Info.plist */,
 				CE5E903E2C3FEB92006F2B89 /* TouchDownSwarmClip.entitlements */,
@@ -239,7 +277,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE5E90542C400A62006F2B89 /* ConnectionCardView.swift in Sources */,
+				CE5E905E2C400A79006F2B89 /* ArenaContentView.swift in Sources */,
+				CE5E905D2C400A79006F2B89 /* RankingView.swift in Sources */,
+				CE5E90502C400A62006F2B89 /* MemberCardView.swift in Sources */,
+				CE5E905C2C400A79006F2B89 /* NavigationView.swift in Sources */,
+				CE5E90522C400A62006F2B89 /* FriendData.swift in Sources */,
+				CE5E90532C400A62006F2B89 /* TeamListView.swift in Sources */,
+				CE5E905F2C400A79006F2B89 /* MapView.swift in Sources */,
+				CE5E904F2C400A62006F2B89 /* ConnectionListView.swift in Sources */,
+				CE5E90552C400A62006F2B89 /* EventCheckInView.swift in Sources */,
 				CE5E90232C3FEB6C006F2B89 /* ContentView.swift in Sources */,
+				CE5E90572C400A6A006F2B89 /* TeamView.swift in Sources */,
+				CE5E90512C400A62006F2B89 /* HomeView.swift in Sources */,
 				CE5E90212C3FEB6C006F2B89 /* TouchDownSwarmApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -248,7 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE5E90372C3FEB90006F2B89 /* ContentView.swift in Sources */,
+				CE5E90372C3FEB90006F2B89 /* PullTageView.swift in Sources */,
 				CE5E90352C3FEB90006F2B89 /* TouchDownSwarmClipApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

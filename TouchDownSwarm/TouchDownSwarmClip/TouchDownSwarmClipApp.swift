@@ -11,7 +11,7 @@ import SwiftUI
 struct TouchDownSwarmClipApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PullTagView()
                 .onContinueUserActivity(NSUserActivityTypeBrowsingWeb) { userActivity in
                     guard let incomingURL = userActivity.webpageURL,
                           let components = NSURLComponents(url: incomingURL,resolvingAgainstBaseURL: true),
