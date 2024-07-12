@@ -21,13 +21,14 @@ struct HomeView: View {
                     Button(action: {
                         isPresented = true
                     }) {
-                        MemberCardView(cardSize: .large)
+                        MemberCardView(cardSize: .large, name: "Hoge Fuga")
                     }
                     .offset(CGSize(width: 0, height: -120))
                     .shadow(radius: 2, x: 0, y: 5)
                     Text("Your Stats")
-                        .font(.custom("SF-Pro", size: 22))
                         .offset(CGSize(width: -120, height: -150))
+                        .foregroundColor(.black)
+                        .font(.custom("SF-Pro", size: 22))
                     HStack(spacing: 13) {
                         ZStack(alignment:.leading) {
                             Rectangle()
@@ -67,6 +68,7 @@ struct HomeView: View {
                     .offset(CGSize(width: 0, height: -150))
                     Text("Flags")
                         .font(.custom("SF-Pro", size: 22))
+                        .foregroundColor(.black)
                         .offset(CGSize(width: -140, height: -140))
                 }
             }

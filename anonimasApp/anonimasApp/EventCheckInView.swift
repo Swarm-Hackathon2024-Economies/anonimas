@@ -14,20 +14,30 @@ struct EventCheckInView: View {
     @State private var showCard: Bool = false
     @State private var showMemberCard = true
     @State private var isShaking: Bool = false
-    
+    @State private var randomFriend: Friend?
+
     @Environment(\.modelContext) private var context
     @Query private var friendData: [FriendData]
-    
+    @EnvironmentObject var friendList: FriendList
+
+
+    func getRandomFriend() -> Friend {
+        return friendList.friends[Int.random(in: 0..<friendList.friends.count)]
+    }
+
     let gradient = LinearGradient(gradient: Gradient(colors: [.cyan,.blue]), startPoint: .topLeading, endPoint: .bottomTrailing)
-    
+
     var body: some View {
         ZStack {
             Image("Screen-Back")
                 .resizable()
                 .frame(height: 880)
+                .onAppear() {
+                    randomFriend = getRandomFriend()
+                }
             VStack{
                 if showCard {
-                    MemberCardView(cardSize: .small)
+                    MemberCardView(cardSize: .small, name: randomFriend?.name ?? "")
                         .offset(y: showMemberCard ? -200 : 950)
                         .animation(.easeInOut, value: showMemberCard)
                         .scaleEffect(showMemberCard ? 1.0 : 0.7)
@@ -37,7 +47,7 @@ struct EventCheckInView: View {
                                 withAnimation(Animation.easeInOut(duration: 0.1).repeatForever()) {
                                     self.isShaking = true
                                 }
-                                
+
                                 DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                                     withAnimation {
                                         self.isShaking = false
@@ -81,12 +91,12 @@ struct EventCheckInView: View {
                         )
                         .zIndex(2)
                         .scaleEffect(self.imageScal)
-                    
+
                     Image("DownArrow")  // テキストを変更
                         .foregroundColor(.white)
                         .padding(.top, 30)
                         .zIndex(1)
-                    
+
                     if isCheckedIn {
                         Text("Conguratulations！!!!!!!!")
                             .foregroundColor(.green)
@@ -118,7 +128,7 @@ struct EventCheckInView: View {
         // ここでタグを引いた時のロジックを実装
         isCheckedIn = true
         textScale += 0.3
-        let data = FriendData(id: 2, name: "Tetsu Fujino")
+        let data = FriendData(id: randomFriend?.id ?? 0, name: randomFriend?.name ?? "")
         context.insert(data)
         withAnimation {
             self.showMemberCard = false

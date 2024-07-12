@@ -8,11 +8,7 @@ enum CardSize {
 struct MemberCardView: View {
     let gradient = LinearGradient(gradient: Gradient(colors: [.gray,.blue,.green]), startPoint: .topLeading, endPoint: .bottomTrailing)
     var cardSize: CardSize
-    @EnvironmentObject var friendList: FriendList
-    func getRandomNum() -> Int {
-        return Int.random(in: 0..<friendList.friends.count)
-    }
-    
+    var name: String
 
     var body: some View {
         
@@ -28,7 +24,7 @@ struct MemberCardView: View {
                         Image(systemName: "football.circle.fill")
                             .resizable()
                             .frame(width: 70, height: 70)
-                        Text(friendList.friends[getRandomNum()].name)
+                        Text(self.name)
                             .font(.title)
                             .bold()
                             .foregroundColor(.white)
@@ -90,7 +86,7 @@ struct MemberCardView: View {
                         Image(systemName: "football.circle.fill")
                             .resizable()
                             .frame(width: 70, height: 70)
-                        Text(friendList.friends[getRandomNum()].name)
+                        Text(self.name)
                             .font(.title)
                             .bold()
                             .foregroundColor(.white)
@@ -105,5 +101,5 @@ struct MemberCardView: View {
 
 
 #Preview {
-    MemberCardView(cardSize: .small)
+    MemberCardView(cardSize: .small, name: "Hoge Fuga")
 }
