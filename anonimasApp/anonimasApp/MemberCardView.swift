@@ -1,4 +1,5 @@
 import SwiftUI
+import SwiftData
 
 enum CardSize {
     case large
@@ -7,8 +8,14 @@ enum CardSize {
 struct MemberCardView: View {
     let gradient = LinearGradient(gradient: Gradient(colors: [.gray,.blue,.green]), startPoint: .topLeading, endPoint: .bottomTrailing)
     var cardSize: CardSize
+    @EnvironmentObject var friendList: FriendList
+    func getRandomNum() -> Int {
+        return Int.random(in: 0..<friendList.friends.count)
+    }
+    
 
     var body: some View {
+        
         switch cardSize {
         case .large:
             ZStack {
@@ -21,7 +28,7 @@ struct MemberCardView: View {
                         Image(systemName: "football.circle.fill")
                             .resizable()
                             .frame(width: 70, height: 70)
-                        Text("Rikuto Yasuda")
+                        Text(friendList.friends[getRandomNum()].name)
                             .font(.title)
                             .bold()
                             .foregroundColor(.white)
@@ -83,7 +90,7 @@ struct MemberCardView: View {
                         Image(systemName: "football.circle.fill")
                             .resizable()
                             .frame(width: 70, height: 70)
-                        Text("Rikuto Yasuda")
+                        Text(friendList.friends[getRandomNum()].name)
                             .font(.title)
                             .bold()
                             .foregroundColor(.white)
@@ -95,6 +102,7 @@ struct MemberCardView: View {
 
     }
 }
+
 
 #Preview {
     MemberCardView(cardSize: .small)

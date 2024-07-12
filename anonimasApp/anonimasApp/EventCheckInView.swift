@@ -12,12 +12,14 @@ struct EventCheckInView: View {
     @State private var imageScal: CGFloat = 1
     @State private var textScale: CGFloat = 1
     @State private var showCard: Bool = false
-
+    @State private var showMemberCard = true
+    @State private var isShaking: Bool = false
+    
     @Environment(\.modelContext) private var context
     @Query private var friendData: [FriendData]
-
+    
     let gradient = LinearGradient(gradient: Gradient(colors: [.cyan,.blue]), startPoint: .topLeading, endPoint: .bottomTrailing)
-
+    
     var body: some View {
         ZStack {
             Image("Screen-Back")
@@ -26,7 +28,23 @@ struct EventCheckInView: View {
             VStack{
                 if showCard {
                     MemberCardView(cardSize: .small)
-                        .offset(y: -200)
+                        .offset(y: showMemberCard ? -200 : 950)
+                        .animation(.easeInOut, value: showMemberCard)
+                        .scaleEffect(showMemberCard ? 1.0 : 0.7)
+                        .offset(x: isShaking ? CGFloat.random(in: -5...5) : 0, y: isShaking ? CGFloat.random(in: -5...5) : 0)
+                        .onAppear {
+                            if (!showMemberCard) {
+                                withAnimation(Animation.easeInOut(duration: 0.1).repeatForever()) {
+                                    self.isShaking = true
+                                }
+                                
+                                DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                                    withAnimation {
+                                        self.isShaking = false
+                                    }
+                                }
+                            }
+                        }
                 }
                 VStack {
                     Button(action: {
@@ -63,12 +81,12 @@ struct EventCheckInView: View {
                         )
                         .zIndex(2)
                         .scaleEffect(self.imageScal)
-
+                    
                     Image("DownArrow")  // テキストを変更
                         .foregroundColor(.white)
                         .padding(.top, 30)
                         .zIndex(1)
-
+                    
                     if isCheckedIn {
                         Text("Conguratulations！!!!!!!!")
                             .foregroundColor(.green)
@@ -102,6 +120,10 @@ struct EventCheckInView: View {
         textScale += 0.3
         let data = FriendData(id: 2, name: "Tetsu Fujino")
         context.insert(data)
+        withAnimation {
+            self.showMemberCard = false
+            self.isShaking = true
+        }
     }
 }
 
