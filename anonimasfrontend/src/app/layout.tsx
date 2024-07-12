@@ -20,6 +20,7 @@ export default function RootLayout({
           name={"apple-itunes-app"}
           content={"app-clip-bundle-id=com.takutaku.SwiftApp.TouchDownSwarm.Clip"}
           app-id={"LANULV72W5"}
+          app-clip-display={"card"}
       />
       <link rel="apple-app-site-association" href="%PUBLIC_URL%/.well-known/apple-app-site-association"/>
       <body className={inter.className}>{children}</body>
