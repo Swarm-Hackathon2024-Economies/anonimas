@@ -15,13 +15,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-    <meta
-        name={"apple-itunes-app"}
-        content={"app-clip-bundle-id=com.takutaku.SwiftApp.TouchDownSwarm.Clip"}
-        app-id={"LANULV72W5"}
-    />
+      <html lang="en">
+      <meta
+          name={"apple-itunes-app"}
+          content={"app-clip-bundle-id=com.takutaku.SwiftApp.TouchDownSwarm.Clip"}
+          app-id={"LANULV72W5"}
+      />
+      <link rel="apple-app-site-association" href="%PUBLIC_URL%/.well-known/apple-app-site-association"/>
       <body className={inter.className}>{children}</body>
-    </html>
+      </html>
   );
 }
