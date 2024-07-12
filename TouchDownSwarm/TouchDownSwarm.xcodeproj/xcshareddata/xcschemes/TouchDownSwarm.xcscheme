@@ -15,9 +15,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CE5E90312C3FEB90006F2B89"
-               BuildableName = "TouchDownSwarmClip.app"
-               BlueprintName = "TouchDownSwarmClip"
+               BlueprintIdentifier = "CE5E901C2C3FEB6C006F2B89"
+               BuildableName = "TouchDownSwarm.app"
+               BlueprintName = "TouchDownSwarm"
                ReferencedContainer = "container:TouchDownSwarm.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -44,16 +44,16 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CE5E90312C3FEB90006F2B89"
-            BuildableName = "TouchDownSwarmClip.app"
-            BlueprintName = "TouchDownSwarmClip"
+            BlueprintIdentifier = "CE5E901C2C3FEB6C006F2B89"
+            BuildableName = "TouchDownSwarm.app"
+            BlueprintName = "TouchDownSwarm"
             ReferencedContainer = "container:TouchDownSwarm.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <EnvironmentVariables>
          <EnvironmentVariable
-            key = "_XCAppClipURL"
-            value = "https://codebakka.github.io/maekeyMaker/"
+            key = "_X"
+            value = ""
             isEnabled = "YES">
          </EnvironmentVariable>
       </EnvironmentVariables>
@@ -68,9 +68,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CE5E90312C3FEB90006F2B89"
-            BuildableName = "TouchDownSwarmClip.app"
-            BlueprintName = "TouchDownSwarmClip"
+            BlueprintIdentifier = "CE5E901C2C3FEB6C006F2B89"
+            BuildableName = "TouchDownSwarm.app"
+            BlueprintName = "TouchDownSwarm"
             ReferencedContainer = "container:TouchDownSwarm.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
