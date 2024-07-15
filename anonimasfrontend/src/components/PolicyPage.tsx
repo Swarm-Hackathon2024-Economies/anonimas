@@ -6,6 +6,7 @@ export default function PolicyPage() {
 
     return (
         <>
+            <p style={{background:"red"}}>test Style</p>
             <div className={`${styles.policyPageArea} bg-white p-8`}>
                 <h2 className="bg-blue-100 rounded-xl p-6 text-3xl font-bold text-center mb-8 shadow-md">Terms of
                     Service</h2>
