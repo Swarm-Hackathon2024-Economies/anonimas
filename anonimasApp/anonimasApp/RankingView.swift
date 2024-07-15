@@ -12,7 +12,7 @@ struct RankingView: View {
         startPoint: UnitPoint(x: 0, y: 0),
         endPoint: UnitPoint(x: 1, y: 1)
     )
-
+    
     var body: some View {
         ZStack(alignment: .top) {
             Image("Screen-Back")

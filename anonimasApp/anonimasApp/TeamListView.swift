@@ -2,14 +2,14 @@ import SwiftUI
 
 struct TeamListView: View {
     @State private var selectedIndex: Int?
-    let items = Array(1...9)
-
+    let items = Array(1...12)
+    
     let columns = [
         GridItem(.flexible()),
         GridItem(.flexible()),
         GridItem(.flexible())
     ]
-
+    
     var body: some View {
         ScrollView {
             VStack(alignment: .center) {

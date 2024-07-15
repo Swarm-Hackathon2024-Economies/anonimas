@@ -9,7 +9,8 @@ struct MemberCardView: View {
     let gradient = LinearGradient(gradient: Gradient(colors: [.gray,.blue,.green]), startPoint: .topLeading, endPoint: .bottomTrailing)
     var cardSize: CardSize
     var name: String
-
+    var id: Int?
+    
     var body: some View {
         
         switch cardSize {
@@ -21,7 +22,7 @@ struct MemberCardView: View {
                     .cornerRadius(15.0)
                 VStack(spacing: 10) {
                     HStack(spacing: 20) {
-                        Image(systemName: "football.circle.fill")
+                        Image("UserIcon-10")
                             .resizable()
                             .frame(width: 70, height: 70)
                         Text(self.name)
@@ -83,7 +84,7 @@ struct MemberCardView: View {
                 VStack(spacing: 10) {
                     Spacer()
                     HStack(spacing: 20) {
-                        Image(systemName: "football.circle.fill")
+                        Image("UserIcon-\(self.id ?? 10)")
                             .resizable()
                             .frame(width: 70, height: 70)
                         Text(self.name)
@@ -95,7 +96,7 @@ struct MemberCardView: View {
                 .frame(width: 347, height: 173)
             }
         }
-
+        
     }
 }
 

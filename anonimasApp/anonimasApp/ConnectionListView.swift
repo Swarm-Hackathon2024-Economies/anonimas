@@ -4,10 +4,10 @@ import SwiftData
 struct ConnectionListView: View {
     @State private var searchText = ""
     @EnvironmentObject var friendList: FriendList
-
+    
     @Environment(\.modelContext) private var context
     @Query private var friendData: [FriendData]
-
+    
     var body: some View {
         ZStack {
             LinearGradient(
@@ -31,7 +31,7 @@ struct ConnectionListView: View {
     func getFriendsByIds(ids: [Int], from friends: [Friend]) -> [Friend] {
         friends.filter { ids.contains($0.id) }
     }
-
+    
 }
 
 #Preview {

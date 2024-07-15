@@ -5,7 +5,7 @@ struct TeamView: View {
     @State private var searchText = ""
     @State private var selectedIndex: Int?
     
-    let items = Array(1...9)
+    let items = Array(1...12)
     
     let columns = [
         GridItem(.flexible()),
@@ -61,7 +61,10 @@ struct TeamView: View {
                 .frame(width: 345, height: 292)
                 .offset(CGSize(width: 0, height: -240))
             HStack {
-                Image("COWBOYS-logo")
+                Image("TeamIcon-\(selectedIndex ?? 1)")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 130)
                     .offset(CGSize(width: 0, height: -30))
                 ZStack {
                     Rectangle()

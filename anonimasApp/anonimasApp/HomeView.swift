@@ -109,8 +109,8 @@ struct HomeView: View {
 
                                 HStack(spacing:4) {
                                     ForEach(1..<6) { index in
-                                        Circle()
-                                            .fill(Color(red: 0.85, green: 0.85, blue: 0.85))
+                                        Image("UserIcon-\(index)")
+                                            .resizable()
                                             .frame(width: 42, height: 42)
                                     }
                                 }

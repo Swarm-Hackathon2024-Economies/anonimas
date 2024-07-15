@@ -37,7 +37,7 @@ struct EventCheckInView: View {
                 }
             VStack{
                 if showCard {
-                    MemberCardView(cardSize: .small, name: randomFriend?.name ?? "")
+                    MemberCardView(cardSize: .small, name: randomFriend?.name ?? "", id:randomFriend?.id ?? 10)
                         .offset(y: showMemberCard ? -200 : 950)
                         .animation(.easeInOut, value: showMemberCard)
                         .scaleEffect(showMemberCard ? 1.0 : 0.7)
@@ -60,10 +60,10 @@ struct EventCheckInView: View {
                     Button(action: {
                         isPresented = true //trueにしないと画面遷移されない
                     }) {
-                        Text("戻る")
-                            .font(.title)
+                        Text("Back to Home")
+                            .font(.title2)
                             .bold()
-                            .foregroundColor(.black)
+                            .foregroundColor(.white)
                     }
                     Image("PullButton")
                         .resizable()
