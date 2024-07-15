@@ -2,7 +2,7 @@ import SwiftUI
 
 struct RankingView: View {
     @State private var searchText = ""
-    
+    @State private var isPresented = false
     let gradient = LinearGradient(
         stops: [
             Gradient.Stop(color: Color(red: 0.21, green: 0.38, blue: 0.79), location: 0.00),

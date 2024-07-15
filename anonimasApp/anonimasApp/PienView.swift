@@ -11,6 +11,14 @@ struct PienView: View {
     @State private var searchText = ""
     @State private var isShowPien = false
     @State private var isAnimating = false
+    @State var value: Double = 0
+    @State var touchDownCount: Int = 0
+    @State var isDangerous: Bool = false
+    
+    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+    
+    let timer2 = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
+    
     let gradient = LinearGradient(
         stops: [
             Gradient.Stop(color: Color(red: 0.21, green: 0.38, blue: 0.79), location: 0.00),
@@ -25,6 +33,54 @@ struct PienView: View {
             Image("Screen-Back")
                 .resizable()
                 .frame(height: 880)
+            
+            HStack {
+                Text("\(touchDownCount)")
+                    .offset(y: -280)
+                    .foregroundColor(.white)
+                    .font(.custom("SF Pro Display", size: 72)
+                        .weight(.black)
+                        .italic()
+                    )
+                
+                Image("touchdown2row")
+                    .resizable()
+                    .frame(width: 120, height: 50)
+                    .offset(y: -280)
+            }
+            
+            Gauge(value: value, in: 0...100) {
+//                Text(Int(value), format: .percent)
+            }currentValueLabel: {
+                // nothing
+            }
+        minimumValueLabel: {
+            Text("\(Int(0))")
+                        } maximumValueLabel: {
+                            Text("\(Int(100))mile")
+                        }
+                        .gaugeStyle(.linearCapacity)
+                        .tint(isDangerous ? .red : .green)
+                        .padding(.horizontal, 30)
+                        .offset(y: -200)
+                        .onReceive(timer) { _ in
+                            if isDangerous == false {
+                                randomValue()
+                            }
+                            if value >= 100 {
+                                countUp()
+                            }
+                        }
+                        .onReceive(timer2, perform: { _ in
+                            if isDangerous == true {
+                                if value >= 0 {
+                                  value = value - 10
+                                }
+                            }
+                        })
+                        .foregroundColor(.white)
+                        
+            
             if self.isShowPien == false {
                 Button(action: {
                     isShowPien = true
@@ -32,6 +88,7 @@ struct PienView: View {
                 }) {
                     VStack { // VStackを追加
                         Text("Driving Now!!")
+                            .offset(y: 50)
                             .font(.system(size: 50))
                             .bold()
                             .foregroundColor(.blue)
@@ -46,6 +103,9 @@ struct PienView: View {
                 Button(action: {
                     isShowPien = false
                     isAnimating = false
+//                    value = 0
+                    touchDownCount = 0
+                    isDangerous = true
                 }){
                     VStack {
                         Text("Dangerous!!!")
@@ -71,6 +131,25 @@ struct PienView: View {
             }
                 
         }
+    }
+    
+    func randomValue() {
+        value = value + Double.random(in: 0...10)
+        if value > 100 {
+            value = 100
+        }
+    }
+    
+    func reduceScore() {
+        value = value - Double.random(in: 0...10)
+        if value < 0 {
+            value = 0
+        }
+    }
+    
+    func countUp() {
+        touchDownCount += 1
+        value = 0
     }
 }
 

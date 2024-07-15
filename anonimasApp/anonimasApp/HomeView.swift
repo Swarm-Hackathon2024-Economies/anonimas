@@ -11,8 +11,6 @@ struct HomeView: View {
                     .frame(height: 880)
                 VStack {
                     HStack {
-                        Image(systemName: "list.dash")
-                            .offset(x:-60)
                         Image("AppLogo")
                             .resizable()
                             .frame(width: 225, height: 50)

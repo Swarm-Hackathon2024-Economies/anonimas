@@ -4,7 +4,9 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string>SF-Pro</string>
+		<string>SF-Pro.ttf</string>
+		<string>SF-Pro-Display-BlackItalic.otf</string>
+		<string>SF-Pro-Italic.ttf</string>
 	</array>
 </dict>
 </plist>

@@ -16,6 +16,8 @@
 		A1BDC0602C370FC900841FF9 /* TeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BDC05F2C370FC900841FF9 /* TeamView.swift */; };
 		A1C9DE612C3FE4A400EAC80F /* FriendDataContextProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C9DE602C3FE4A300EAC80F /* FriendDataContextProvider.swift */; };
 		A1EA505A2C36F8FA0067D7E3 /* SF-Pro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1EA50592C36F8FA0067D7E3 /* SF-Pro.ttf */; };
+		CE1D0EB42C44E2E30025DAF7 /* SF-Pro-Display-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE1D0EB32C44E2E20025DAF7 /* SF-Pro-Display-BlackItalic.otf */; };
+		CE1D0EB52C44E2E30025DAF7 /* SF-Pro-Display-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE1D0EB32C44E2E20025DAF7 /* SF-Pro-Display-BlackItalic.otf */; };
 		CE1EA06F2C371374004AF4C9 /* RankingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1EA06E2C371374004AF4C9 /* RankingView.swift */; };
 		CE4CCCA42C3D0F490087C951 /* TouchDownConnectClipApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4CCCA32C3D0F490087C951 /* TouchDownConnectClipApp.swift */; };
 		CE4CCCA62C3D0F490087C951 /* PullTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4CCCA52C3D0F490087C951 /* PullTagView.swift */; };
@@ -104,6 +106,7 @@
 		A1C9DE602C3FE4A300EAC80F /* FriendDataContextProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDataContextProvider.swift; sourceTree = "<group>"; };
 		A1EA50582C36F6C40067D7E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		A1EA50592C36F8FA0067D7E3 /* SF-Pro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro.ttf"; sourceTree = "<group>"; };
+		CE1D0EB32C44E2E20025DAF7 /* SF-Pro-Display-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-BlackItalic.otf"; sourceTree = "<group>"; };
 		CE1EA06E2C371374004AF4C9 /* RankingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingView.swift; sourceTree = "<group>"; };
 		CE1FA4D92C3D91D400CCB90D /* anonimasApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = anonimasApp.entitlements; sourceTree = "<group>"; };
 		CE4CCCA12C3D0F490087C951 /* TouchDownConnectClip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchDownConnectClip.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -226,6 +229,7 @@
 			children = (
 				CE7B6BFC2C355E4D0048A792 /* anonimasApp */,
 				A1EA50592C36F8FA0067D7E3 /* SF-Pro.ttf */,
+				CE1D0EB32C44E2E20025DAF7 /* SF-Pro-Display-BlackItalic.otf */,
 				CE7B6C0D2C355E4F0048A792 /* anonimasAppTests */,
 				CE7B6C172C355E4F0048A792 /* anonimasAppUITests */,
 				CE4CCCA22C3D0F490087C951 /* TouchDownConnectClip */,
@@ -476,6 +480,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE4CCCAB2C3D0F4A0087C951 /* Preview Assets.xcassets in Resources */,
+				CE1D0EB52C44E2E30025DAF7 /* SF-Pro-Display-BlackItalic.otf in Resources */,
 				CE4CCCA82C3D0F4A0087C951 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -498,6 +503,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE1D0EB42C44E2E30025DAF7 /* SF-Pro-Display-BlackItalic.otf in Resources */,
 				CE7B6C052C355E4E0048A792 /* Preview Assets.xcassets in Resources */,
 				E13C0FAF2C3D785100D9C175 /* car.gif in Resources */,
 				A1EA505A2C36F8FA0067D7E3 /* SF-Pro.ttf in Resources */,
