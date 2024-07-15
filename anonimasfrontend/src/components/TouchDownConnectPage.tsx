@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 
 export default function TouchDownConnectPage() {
     const BASE_PATH = process.env.BASE_PATH || "";
@@ -52,14 +53,14 @@ export default function TouchDownConnectPage() {
                         src='./ecoIcon.png'
                         alt='ecconomiesIcon'
                         style={{
-                            width: '100px',
-                            height: '100px',
-                            marginLeft: '6px',
+                            width: "100px",
+                            height: "100px",
+                            marginLeft: "6px",
                             marginRight: "12px",
-                            borderRadius: '22%',
-                            overflow: 'hidden',
-                            display: 'inline-block',
-                            verticalAlign: 'middle'
+                            borderRadius: "22%",
+                            overflow: "hidden",
+                            display: "inline-block",
+                            verticalAlign: "middle"
                         }}
                     />
                     <div>
@@ -82,7 +83,7 @@ export default function TouchDownConnectPage() {
                     overflow: "scroll",
                     margin: "0 0 24px",
                     fontSize: "14px",
-                    lineHeight: '130%',
+                    lineHeight: "130%",
                     color: "gray"
                 }}>
                     <h3 style={{
@@ -160,7 +161,7 @@ export default function TouchDownConnectPage() {
                     <p style={{
                         margin: "0",
                         fontSize: "10px",
-                        lineHeight: '130%',
+                        lineHeight: "130%",
                         color: "gray",
                         marginLeft: "6px"
                     }}
