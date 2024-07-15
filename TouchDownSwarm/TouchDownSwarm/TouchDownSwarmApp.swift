@@ -15,6 +15,7 @@ struct TouchDownSwarmApp: App {
         WindowGroup {
             ContentView()
                 .environmentObject(friendData)
+                .modelContainer(for: FriendData.self)
         }
 
     }

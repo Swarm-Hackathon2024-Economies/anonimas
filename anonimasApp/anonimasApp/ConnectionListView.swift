@@ -20,9 +20,6 @@ struct ConnectionListView: View {
             )
             .edgesIgnoringSafeArea(.all)
             ScrollView {
-                Image("friendList")
-                    .resizable()
-                    .frame(width: 380, height: 600)
                 ForEach(getFriendsByIds(ids: friendData.map{data in data.id}, from: friendList.friends), id: \.id) { friend in
                     ConnectionCardView(userName: friend.name, touchdownNumber: friend.touchdown, flagNumber: friend.flag, imageNumber: (friend.id % 4) + 1)
                         .padding(.bottom, 10)
