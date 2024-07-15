@@ -67,12 +67,12 @@ export default function TouchDownConnectPage() {
                             fontSize: "20px",
                             margin: "20px 0 0",
                             fontWeight: 800
-                        }}>Touch Down Connect</h2>
+                        }}>Touch Down SWARM</h2>
                         <p style={{
                             fontSize: "14px",
                             margin: "6px 0 0 6px",
                             color: "gray",
-                        }}>Economies</p>
+                        }}>Economies@DIG</p>
                     </div>
 
                 </a>
