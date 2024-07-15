@@ -17,33 +17,33 @@ struct ArenaContentView: View {
                     usePureMap()
                 } label: {
                     HStack {
-                                            Image(systemName: "location.fill")
-                                            Text("Go!")
-                                        }
+                        Image(systemName: "location.fill")
+                        Text("Go!")
+                    }
                     .padding(.horizontal, 20)
-                                        .padding(.vertical, 10)
-                                        .background(
-                                            Group {
-                                                if isHovered {
-                                                    Color.blue.opacity(0.8)
-                                                } else {
-                                                    Color.blue
-                                                }
-                                            }
-                                        )
-                                        .foregroundColor(.white)
-                                        .font(.headline)
-                                        .clipShape(RoundedRectangle(cornerRadius: self.cornerRadius))
-                                        .shadow(color: .gray.opacity(0.5), radius: 5, x: 0, y: 2)
-                                        .scaleEffect(isHovered ? 1.05 : 1.0)
-                                        .animation(.easeInOut(duration: 0.2), value: isHovered)
-                                    }
+                    .padding(.vertical, 10)
+                    .background(
+                        Group {
+                            if isHovered {
+                                Color.blue.opacity(0.8)
+                            } else {
+                                Color.blue
+                            }
+                        }
+                    )
+                    .foregroundColor(.white)
+                    .font(.headline)
+                    .clipShape(RoundedRectangle(cornerRadius: self.cornerRadius))
+                    .shadow(color: .gray.opacity(0.5), radius: 5, x: 0, y: 2)
+                    .scaleEffect(isHovered ? 1.05 : 1.0)
+                    .animation(.easeInOut(duration: 0.2), value: isHovered)
+                }
                 .offset(y: 20)
-                                    .buttonStyle(PlainButtonStyle())
-                                    .onHover { hovering in
-                                        isHovered = hovering
-                                    }
-                                    .padding(.trailing, 20)
+                .buttonStyle(PlainButtonStyle())
+                .onHover { hovering in
+                    isHovered = hovering
+                }
+                .padding(.trailing, 20)
                 
             }
             HStack {
@@ -67,9 +67,9 @@ struct ArenaContentView: View {
         }
     }
     func usePureMap() {
-            let coordinates = CLLocationCoordinate2D(latitude: 35.08528700676618, longitude:  137.1711767920404)
-            let mapItem = MKMapItem(placemark: MKPlacemark(coordinate: coordinates, addressDictionary: nil))
-            mapItem.openInMaps(launchOptions: [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeDriving])
+        let coordinates = CLLocationCoordinate2D(latitude: 35.08528700676618, longitude:  137.1711767920404)
+        let mapItem = MKMapItem(placemark: MKPlacemark(coordinate: coordinates, addressDictionary: nil))
+        mapItem.openInMaps(launchOptions: [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeDriving])
     }
 }
 

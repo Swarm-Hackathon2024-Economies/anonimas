@@ -1,4 +1,3 @@
-
 import SwiftUI
 import MapKit
 
@@ -10,50 +9,66 @@ struct Location: Identifiable {
 }
 
 struct NavigationView: View {
-    @State private var region = MKCoordinateRegion(
-        center: CLLocationCoordinate2D(latitude:  33.154321, longitude: -96.835426),
+    @State private var region = MapCameraPosition.region(MKCoordinateRegion(
+        center: CLLocationCoordinate2D(latitude: 33.154321, longitude: -96.835426),
         span: MKCoordinateSpan(latitudeDelta: 0.003, longitudeDelta: 0.003)
-    )
+    ))
     
     @State private var locations: [Location] = [
-        //        Location(name: "東京タワー", coordinate: CLLocationCoordinate2D(latitude: 35.6586, longitude: 139.7454), description: "東京のランドマーク"),
-        Location(name: "Toyota-Stadium", coordinate: CLLocationCoordinate2D(latitude:  33.154321, longitude: -96.835426), description: "Toyota-Stadium")
+        Location(name: "Toyota-Stadium", coordinate: CLLocationCoordinate2D(latitude: 33.154321, longitude: -96.835426), description: "Toyota-Stadium")
     ]
     
     @State private var selectedLocation: Location?
     @State private var showingSheet = false
     
     var body: some View {
-        Map(coordinateRegion: $region, annotationItems: locations) { location in
-            MapAnnotation(coordinate: location.coordinate) {
-                Image(systemName: "building.columns.circle.fill")
-                    .foregroundColor(.red)
-                    .onTapGesture {
-                        selectedLocation = location
-                        showingSheet = true
-                    }
+        Map(position: $region) {
+            ForEach(locations) { location in
+                Marker(location.name, coordinate: location.coordinate)
+                    .tint(.orange)
             }
         }
-        .mapControls() {
+        .mapControls {
             MapCompass()
-                .mapControlVisibility(.visible)
             MapPitchToggle()
-                .mapControlVisibility(.visible)
             MapScaleView()
-                .mapControlVisibility(.visible)
             MapUserLocationButton()
-                .mapControlVisibility(.visible)
+        }
+        .onTapGesture { _ in
+            if let location = locations.first {
+                selectedLocation = location
+                showingSheet = true
+            }
         }
         .sheet(isPresented: $showingSheet) {
-            if let location = selectedLocation {
-                ArenaContentView(location: location, cornerRadius: CGFloat(1.0))
-                    .presentationDetents([.medium])
-                    .presentationDragIndicator(.visible)
-            }
+            SheetContent(location: selectedLocation, onDismiss: rejectSheetPopUp)
         }
+    }
+    
+    func rejectSheetPopUp() {
+        self.showingSheet = false
     }
 }
 
+struct SheetContent: View {
+    let location: Location?
+    let onDismiss: () -> Void
+    
+    @State private var locations: [Location] = [
+        Location(name: "Toyota-Stadium", coordinate: CLLocationCoordinate2D(latitude: 33.154321, longitude: -96.835426), description: "Toyota-Stadium")
+    ]
+    
+    var body: some View {
+        if let location = locations.first {
+            ArenaContentView(location: location, cornerRadius: CGFloat(1.0))
+                .presentationDetents([.medium])
+                .presentationDragIndicator(.visible)
+        } else {
+            Text("No location selected")
+                .onAppear(perform: onDismiss)
+        }
+    }
+}
 
 #Preview {
     NavigationView()

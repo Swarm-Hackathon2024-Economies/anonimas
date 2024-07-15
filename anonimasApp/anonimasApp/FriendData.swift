@@ -10,13 +10,11 @@ struct Friend: Identifiable {
 
 class FriendList: ObservableObject {
     @Published var friends: [Friend] = [
-        Friend(id: 1, name: "Kento Izumi", touchdown: 11, flag: 123),
-        Friend(id: 2, name: "Tetsu Fujino", touchdown: 22, flag: 234),
-        Friend(id: 3, name: "Satoshi Toma", touchdown: 33, flag: 345),
-        Friend(id: 4, name: "Rikuto Yasuda", touchdown: 44, flag: 456),
-        Friend(id: 5, name: "Sho Ohashi", touchdown: 55, flag: 567),
-        Friend(id: 6, name: "Takuya Hiraoka", touchdown: 66, flag: 678),
-        Friend(id: 7, name: "Keisuke Isaji", touchdown: 77, flag: 789),
+        Friend(id: 1, name: "Takuya Ohashi", touchdown: 11, flag: 123),
+        Friend(id: 2, name: "Sho Hiraoka", touchdown: 22, flag: 234),
+        Friend(id: 3, name: "Keisuke Toma", touchdown: 33, flag: 345),
+        Friend(id: 4, name: "Satoshi Yasuda", touchdown: 44, flag: 456),
+        Friend(id: 5, name: "Rikuto Isaji", touchdown: 55, flag: 567),
     ]
 }
 
