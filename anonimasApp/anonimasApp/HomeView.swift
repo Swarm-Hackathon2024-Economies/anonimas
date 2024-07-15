@@ -15,7 +15,7 @@ struct HomeView: View {
                             .resizable()
                             .frame(width: 225, height: 50)
                     }
-                    .offset(CGSize(width: 0, height: -100))
+                    .offset(CGSize(width: 0, height: -90))
                     Button(action: {
                         isPresented = true
                     }) {
