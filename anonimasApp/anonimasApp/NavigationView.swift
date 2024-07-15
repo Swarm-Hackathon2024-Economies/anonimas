@@ -46,7 +46,7 @@ struct NavigationView: View {
         }
         .sheet(isPresented: $showingSheet) {
             if let location = selectedLocation {
-                ArenaContentView(location: location)
+                ArenaContentView(location: location, cornerRadius: CGFloat(1.0))
                     .presentationDetents([.medium])
                     .presentationDragIndicator(.visible)
             }
