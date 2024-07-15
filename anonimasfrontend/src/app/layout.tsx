@@ -16,13 +16,13 @@ export default function RootLayout({
 }>) {
   return (
       <html lang="en">
-      <meta
-          name={"apple-itunes-app"}
-          content={"app-clip-bundle-id=com.takutaku.SwiftApp.TouchDownSwarm.Clip"}
-          app-id={"LANULV72W5"}
-          app-clip-display={"card"}
-      />
-      <meta name="apple-itunes-app" content="app-id=6532610918, app-argument=https://apps.apple.com/jp/app/touchdownswarm/id6532610918?l=en-US"/>
+      {/*<meta*/}
+      {/*    name={"apple-itunes-app"}*/}
+      {/*    content={"app-clip-bundle-id=com.takutaku.SwiftApp.TouchDownSwarm.Clip"}*/}
+      {/*    app-id={"LANULV72W5"}*/}
+      {/*    app-clip-display={"card"}*/}
+      {/*/>*/}
+      <meta name="apple-itunes-app" content="app-id=6532610918, app-argument=https://apps.apple.com/jp/app/touchdownswarm/id6532610918?itsct=apps_box_link&itscg=30200"/>
       <body className={inter.className}>{children}</body>
       </html>
   );
