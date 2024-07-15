@@ -18,18 +18,19 @@
     margin: 24px 0;
   }
   > p {
-    margin: 0;
     @include default-font;
+    margin: 0;
     color: gray;
     font-size: 14px;
     line-height: 150%;
   }
 
   > h3 {
-    margin: 0;
     @include default-font;
+    margin: 0;
     color: gray;
     font-size: 16px;
     line-height: 150%;
   }
 }
+
