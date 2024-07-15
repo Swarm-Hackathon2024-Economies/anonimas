@@ -22,7 +22,7 @@ export default function RootLayout({
           app-id={"LANULV72W5"}
           app-clip-display={"card"}
       />
-      <meta name="apple-itunes-app" content="app-id=6532610918, app-argument=myURL"/>
+      <meta name="apple-itunes-app" content="app-id=6532610918, app-argument=https://apps.apple.com/jp/app/touchdownswarm/id6532610918?l=en-US"/>
       <body className={inter.className}>{children}</body>
       </html>
   );
