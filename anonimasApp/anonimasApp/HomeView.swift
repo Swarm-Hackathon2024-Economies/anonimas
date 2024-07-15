@@ -19,7 +19,7 @@ struct HomeView: View {
                     Button(action: {
                         isPresented = true
                     }) {
-                        MemberCardView(cardSize: .large, name: "Hoge Fuga")
+                        MemberCardView(cardSize: .large, name: "Taro Hoge")
                     }
                     .offset(CGSize(width: 0, height: -120))
                     .shadow(radius: 2, x: 0, y: 5)
@@ -114,20 +114,19 @@ struct HomeView: View {
                                             .frame(width: 42, height: 42)
                                     }
                                 }
-                                HStack(spacing: 197) {
+                                HStack(alignment:.top, spacing: 197) {
                                     HStack(spacing: 0) {
                                         Image(systemName: "person.2.fill")
                                         Text("5")
                                     }
                                     Text("154/200mi")
                                 }
-
                             }
                             .offset(CGSize(width: 13.0, height: 0))
                         }
                         .offset(CGSize(width: 0, height: 0))
                     }
-                    .offset(CGSize(width: 0, height: -140))
+                    .offset(CGSize(width: 0, height: -160))
                 }
                 .offset(CGSize(width: 0, height: 190))
             }

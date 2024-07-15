@@ -38,7 +38,7 @@ struct MemberCardView: View {
                         }
                         HStack(alignment:.bottom,spacing: 16) {
                             VStack(spacing: 0) {
-                                Image("TeamIcon-6")
+                                Image("TeamIcon-1")
                                     .resizable()
                                     .frame(width: 52, height: 48)
                                 Text("Cowboys")
