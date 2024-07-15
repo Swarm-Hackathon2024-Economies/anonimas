@@ -36,6 +36,9 @@
 		CEF73FD12C36A25C005A4EAF /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF73FD02C36A25C005A4EAF /* MapView.swift */; };
 		CEF73FD52C36AF3C005A4EAF /* NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF73FD42C36AF3C005A4EAF /* NavigationView.swift */; };
 		CEF73FD72C36AF8E005A4EAF /* ArenaContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF73FD62C36AF8E005A4EAF /* ArenaContentView.swift */; };
+		E13C0FAB2C3D65A400D9C175 /* PienView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13C0FAA2C3D65A400D9C175 /* PienView.swift */; };
+		E13C0FAD2C3D77D300D9C175 /* GIFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13C0FAC2C3D77D300D9C175 /* GIFView.swift */; };
+		E13C0FAF2C3D785100D9C175 /* car.gif in Resources */ = {isa = PBXBuildFile; fileRef = E13C0FAE2C3D785100D9C175 /* car.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,6 +132,9 @@
 		CEF73FD02C36A25C005A4EAF /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		CEF73FD42C36AF3C005A4EAF /* NavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationView.swift; sourceTree = "<group>"; };
 		CEF73FD62C36AF8E005A4EAF /* ArenaContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArenaContentView.swift; sourceTree = "<group>"; };
+		E13C0FAA2C3D65A400D9C175 /* PienView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PienView.swift; sourceTree = "<group>"; };
+		E13C0FAC2C3D77D300D9C175 /* GIFView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFView.swift; sourceTree = "<group>"; };
+		E13C0FAE2C3D785100D9C175 /* car.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = car.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -257,6 +263,7 @@
 				A19FE6B62C3D933F006FB7A1 /* FriendData.swift */,
 				A1C9DE602C3FE4A300EAC80F /* FriendDataContextProvider.swift */,
 				A11BB2352C35917200D75D67 /* MemberCardView.swift */,
+				E13C0FAE2C3D785100D9C175 /* car.gif */,
 				CE7B6C012C355E4E0048A792 /* Assets.xcassets */,
 				A1BDC05F2C370FC900841FF9 /* TeamView.swift */,
 				CE7B6C032C355E4E0048A792 /* Preview Content */,
@@ -264,6 +271,8 @@
 				CEF73FD42C36AF3C005A4EAF /* NavigationView.swift */,
 				CEF73FD62C36AF8E005A4EAF /* ArenaContentView.swift */,
 				CE1EA06E2C371374004AF4C9 /* RankingView.swift */,
+				E13C0FAA2C3D65A400D9C175 /* PienView.swift */,
+				E13C0FAC2C3D77D300D9C175 /* GIFView.swift */,
 			);
 			path = anonimasApp;
 			sourceTree = "<group>";
@@ -490,6 +499,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE7B6C052C355E4E0048A792 /* Preview Assets.xcassets in Resources */,
+				E13C0FAF2C3D785100D9C175 /* car.gif in Resources */,
 				A1EA505A2C36F8FA0067D7E3 /* SF-Pro.ttf in Resources */,
 				CE7B6C022C355E4E0048A792 /* Assets.xcassets in Resources */,
 			);
@@ -545,10 +555,12 @@
 				A1BDC0602C370FC900841FF9 /* TeamView.swift in Sources */,
 				A19FE6B52C3849E2006FB7A1 /* TeamListView.swift in Sources */,
 				CEF73FD72C36AF8E005A4EAF /* ArenaContentView.swift in Sources */,
+				E13C0FAD2C3D77D300D9C175 /* GIFView.swift in Sources */,
 				A1141BAE2C36A26D003096C3 /* ConnectionListView.swift in Sources */,
 				A1141BB02C36A481003096C3 /* ConnectionCardView.swift in Sources */,
 				A11BB2362C35917200D75D67 /* MemberCardView.swift in Sources */,
 				A1C9DE612C3FE4A400EAC80F /* FriendDataContextProvider.swift in Sources */,
+				E13C0FAB2C3D65A400D9C175 /* PienView.swift in Sources */,
 				CEF73FD12C36A25C005A4EAF /* MapView.swift in Sources */,
 				CEF73FD52C36AF3C005A4EAF /* NavigationView.swift in Sources */,
 				CE7B6C002C355E4D0048A792 /* ContentView.swift in Sources */,

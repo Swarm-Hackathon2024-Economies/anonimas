@@ -33,10 +33,10 @@ struct ContentView: View {
                         Image(systemName: "football.fill")
                         Text("Team")
                     }
-                RankingView()
+                PienView()
                     .tabItem {
-                        Image(systemName: "trophy.fill")
-                        Text("Ranking")
+                        Image(systemName: "figure.american.football")
+                        Text("Pien")
                     }
             }
         }
