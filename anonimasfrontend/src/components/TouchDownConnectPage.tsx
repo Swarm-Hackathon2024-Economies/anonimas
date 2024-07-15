@@ -40,7 +40,6 @@ export default function TouchDownConnectPage() {
                     marginBottom: "24px"
                 }}/>
                 <a style={{
-                    // display: "flex",
                     margin: "0 16px 24px",
                     width: "100%",
                     display: 'inline-flex',
@@ -79,9 +78,9 @@ export default function TouchDownConnectPage() {
                 </a>
                 <div style={{
                     width: "calc(100% - 16px)",
-                    height: "calc(100vh - 92px - 27px - 124px - 24px - 8px - 41.5px - 8px)",
+                    height: "calc(100vh - 92px - 27px - 124px - 24px - 8px - 41.5px - 12px)",
                     overflow: "scroll",
-                    margin: "0 0 24px",
+                    margin: "0 0 12px",
                     fontSize: "14px",
                     lineHeight: "130%",
                     color: "gray"
