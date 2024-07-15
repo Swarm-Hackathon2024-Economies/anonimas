@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct ConnectionCardView: View {
+    let id: Int
     let userName: String
     let touchdownNumber: Int
     let flagNumber: Int
@@ -12,7 +13,7 @@ struct ConnectionCardView: View {
                 .frame(width: 345, height: 100)
                 .cornerRadius(10.0)
             HStack(spacing: 12) {
-                Image("UserIcon-test")
+                Image("UserIcon-\(id)")
                     .resizable()
                     .frame(width: 72.36, height:72.36)
                 VStack {
@@ -49,5 +50,5 @@ struct ConnectionCardView: View {
 }
 
 #Preview {
-    ConnectionCardView(userName: "Kento Izumi", touchdownNumber: 823, flagNumber: 286, imageNumber: 1)
+    ConnectionCardView(id: 1,userName: "Kento Izumi", touchdownNumber: 823, flagNumber: 286, imageNumber: 1)
 }

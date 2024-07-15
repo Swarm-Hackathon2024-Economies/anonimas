@@ -21,11 +21,11 @@ struct RankingView: View {
                 .font(.title)
                 .bold()
                 .foregroundColor(.blue)
-            Button(action: {
-                isPresented = true
-            }) {
-                PienView()
-            }
+//            Button(action: {
+//                isPresented = true
+//            }) {
+//                PienView()
+//            }
 
         }
     }

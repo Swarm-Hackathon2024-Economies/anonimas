@@ -21,7 +21,7 @@ struct ConnectionListView: View {
             .edgesIgnoringSafeArea(.all)
             ScrollView {
                 ForEach(getFriendsByIds(ids: friendData.map{data in data.id}, from: friendList.friends), id: \.id) { friend in
-                    ConnectionCardView(userName: friend.name, touchdownNumber: friend.touchdown, flagNumber: friend.flag, imageNumber: (friend.id % 4) + 1)
+                    ConnectionCardView(id:friend.id ,userName: friend.name, touchdownNumber: friend.touchdown, flagNumber: friend.flag, imageNumber: (friend.id % 4) + 1)
                         .padding(.bottom, 10)
                         .searchable(text: $searchText)
                 }
