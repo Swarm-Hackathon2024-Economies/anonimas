@@ -17,9 +17,9 @@ export default function TouchDownConnectPage() {
                     position: "absolute",
                     top: "-150px",
                     width: "100%",
-                    height: "280px",
+                    height: "290px",
                     background: "linear-gradient(to bottom right, gray, blue, green)",
-                    borderRadius: "50%",
+                    borderRadius: "35%",
                     zIndex: -1
                 }}></div>
                 <h2 style={{
@@ -33,7 +33,7 @@ export default function TouchDownConnectPage() {
                 </h2>
                 <hr style={{
                     height: "3px",
-                    background: "black",
+                    background: "none",
                     width: '100%',
                     margin: 0,
                     borderStyle: "none",
