@@ -22,7 +22,7 @@ export default function RootLayout({
           app-id={"LANULV72W5"}
           app-clip-display={"card"}
       />
-      {/*<link rel="apple-app-site-association" href="%PUBLIC_URL%/.well-known/apple-app-site-association"/>*/}
+      <meta name="apple-itunes-app" content="app-id=6532610918, app-argument=myURL"/>
       <body className={inter.className}>{children}</body>
       </html>
   );

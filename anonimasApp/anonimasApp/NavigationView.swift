@@ -21,7 +21,7 @@ struct NavigationView: View {
     ]
     
     @State private var selectedLocation: Location?
-    @State private var showingSheet = true
+    @State private var showingSheet = false
     
     var body: some View {
         Map(coordinateRegion: $region, annotationItems: locations) { location in
